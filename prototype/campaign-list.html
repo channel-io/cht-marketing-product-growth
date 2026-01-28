@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캠페인 - 채널톡</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f5f5f5;
+      color: #1a1a1a;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .container { display: flex; min-height: 100vh; }
+
+    /* 사이드바 */
+    .sidebar {
+      width: 200px;
+      background: #fff;
+      border-right: 1px solid #e5e5e5;
+      padding: 16px 0;
+      flex-shrink: 0;
+    }
+    .sidebar-title { font-size: 15px; font-weight: 600; padding: 8px 16px; color: #1a1a1a; }
+    .sidebar-menu { list-style: none; margin-top: 8px; }
+    .sidebar-menu li {
+      padding: 10px 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #666;
+      font-size: 14px;
+    }
+    .sidebar-menu li a { color: inherit; text-decoration: none; }
+    .sidebar-menu li:hover { background: #f5f5f5; }
+    .sidebar-menu li.active { background: #f0f0ff; color: #5c5cff; font-weight: 500; }
+
+    /* 메인 */
+    .main { flex: 1; padding: 24px 32px; overflow-y: auto; }
+    .page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px; }
+    .page-header-left { }
+    .page-title { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+    .page-description { color: #666; font-size: 14px; }
+
+    /* 버튼 */
+    .btn { padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: #5c5cff; color: #fff; }
+    .btn-primary:hover { background: #4a4ae0; }
+    .btn-secondary { background: #f5f5f5; color: #666; }
+    .btn-secondary:hover { background: #e8e8e8; }
+
+    /* 필터 바 */
+    .filter-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .filter-tabs {
+      display: flex;
+      background: #fff;
+      border-radius: 8px;
+      padding: 4px;
+      border: 1px solid #e5e5e5;
+    }
+    .filter-tab {
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #666;
+      cursor: pointer;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .filter-tab:hover { background: #f5f5f5; }
+    .filter-tab.active { background: #5c5cff; color: #fff; }
+    .filter-dropdown {
+      padding: 8px 12px;
+      font-size: 13px;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      background: #fff;
+      color: #666;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .filter-dropdown.active { border-color: #5c5cff; color: #5c5cff; background: #f0f0ff; }
+    .filter-count {
+      background: #e5e5e5;
+      color: #666;
+      padding: 2px 6px;
+      border-radius: 10px;
+      font-size: 11px;
+    }
+    .filter-tab.active .filter-count { background: rgba(255,255,255,0.3); color: #fff; }
+    .search-box {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 6px;
+      padding: 8px 12px;
+    }
+    .search-box input {
+      border: none;
+      outline: none;
+      font-size: 13px;
+      width: 180px;
+    }
+
+    /* 테이블 */
+    .campaign-table {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .campaign-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .campaign-table th {
+      text-align: left;
+      padding: 12px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #888;
+      border-bottom: 1px solid #e5e5e5;
+      background: #fafafa;
+    }
+    .campaign-table td {
+      padding: 16px;
+      font-size: 13px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .campaign-table tr:last-child td { border-bottom: none; }
+    .campaign-table tr:hover { background: #fafafa; }
+    .campaign-name {
+      font-weight: 500;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .campaign-name a { color: inherit; text-decoration: none; }
+    .campaign-name a:hover { color: #5c5cff; }
+
+    /* 상태 뱃지 */
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .status-badge.running { background: #d1fae5; color: #059669; }
+    .status-badge.draft { background: #f3f4f6; color: #6b7280; }
+    .status-badge.ended { background: #fee2e2; color: #dc2626; }
+
+    /* 퍼널 뱃지 */
+    .funnel-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .funnel-badge.signup { background: #ede9fe; color: #7c3aed; }
+    .funnel-badge.purchase { background: #fef3c7; color: #d97706; }
+    .funnel-badge.repurchase { background: #dbeafe; color: #2563eb; }
+
+    /* 서비스 아이콘 */
+    .service-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+    .service-icon.chat { background: #e0f2fe; }
+    .service-icon.popup { background: #fef3c7; }
+
+    /* 숫자 정렬 */
+    .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .num-highlight { color: #059669; font-weight: 500; }
+
+    /* 빈 상태 */
+    .empty-state {
+      text-align: center;
+      padding: 60px 20px;
+      color: #888;
+    }
+    .empty-state-icon { font-size: 48px; margin-bottom: 16px; }
+    .empty-state-title { font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 8px; }
+    .empty-state-desc { font-size: 14px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <div class="sidebar-title">마케팅</div>
+      <ul class="sidebar-menu">
+        <li><span>🏠</span> <a href="marketing-home.html">홈</a></li>
+        <li class="active"><span>🔄</span> 캠페인</li>
+        <li><span>📖</span> 사용 가이드</li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <div class="page-header">
+        <div class="page-header-left">
+          <h1 class="page-title">캠페인</h1>
+          <p class="page-description">반복 발송되는 마케팅을 관리하고 성과를 확인하세요.</p>
+        </div>
+        <button class="btn btn-primary">+ 캠페인 만들기</button>
+      </div>
+
+      <!-- 필터 바 -->
+      <div class="filter-bar">
+        <div class="filter-tabs">
+          <div class="filter-tab active">전체 <span class="filter-count">16</span></div>
+          <div class="filter-tab">작동중 <span class="filter-count">8</span></div>
+          <div class="filter-tab">초안 <span class="filter-count">5</span></div>
+          <div class="filter-tab">종료됨 <span class="filter-count">3</span></div>
+        </div>
+        <div class="filter-dropdown" id="funnel-filter">
+          퍼널 단계 ▼
+        </div>
+        <div class="filter-dropdown">
+          서비스 ▼
+        </div>
+        <div class="search-box">
+          <span>🔍</span>
+          <input type="text" placeholder="캠페인에서 검색">
+        </div>
+      </div>
+
+      <!-- 테이블 -->
+      <div class="campaign-table">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 30%;">제목</th>
+              <th>상태</th>
+              <th>퍼널</th>
+              <th>서비스</th>
+              <th class="num">전송</th>
+              <th class="num">조회</th>
+              <th class="num">클릭</th>
+              <th class="num">전환율</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">회원가입 유도 - 첫방문 쿠폰</a>
+                </div>
+              </td>
+              <td><span class="status-badge running">작동중</span></td>
+              <td><span class="funnel-badge signup">가입 유도</span></td>
+              <td><span class="service-icon popup">📢</span></td>
+              <td class="num">3,279</td>
+              <td class="num">12%</td>
+              <td class="num">2.6%</td>
+              <td class="num num-highlight">1.1%</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">장바구니 리마인드 - 24시간</a>
+                </div>
+              </td>
+              <td><span class="status-badge running">작동중</span></td>
+              <td><span class="funnel-badge purchase">구매 전환</span></td>
+              <td><span class="service-icon chat">💬</span></td>
+              <td class="num">1,705</td>
+              <td class="num">17.4%</td>
+              <td class="num">3.9%</td>
+              <td class="num num-highlight">2.4%</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">재구매 유도 - 30일 후</a>
+                </div>
+              </td>
+              <td><span class="status-badge running">작동중</span></td>
+              <td><span class="funnel-badge repurchase">재구매</span></td>
+              <td><span class="service-icon chat">💬</span></td>
+              <td class="num">854</td>
+              <td class="num">21.2%</td>
+              <td class="num">3.5%</td>
+              <td class="num num-highlight">0.8%</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">뉴스레터 구독 유도</a>
+                </div>
+              </td>
+              <td><span class="status-badge running">작동중</span></td>
+              <td><span class="funnel-badge signup">가입 유도</span></td>
+              <td><span class="service-icon popup">📢</span></td>
+              <td class="num">2,156</td>
+              <td class="num">8.5%</td>
+              <td class="num">1.8%</td>
+              <td class="num">0.6%</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">최근 본 상품 추천</a>
+                </div>
+              </td>
+              <td><span class="status-badge running">작동중</span></td>
+              <td><span class="funnel-badge purchase">구매 전환</span></td>
+              <td><span class="service-icon chat">💬</span></td>
+              <td class="num">4,626</td>
+              <td class="num">20.9%</td>
+              <td class="num">4.9%</td>
+              <td class="num num-highlight">1.9%</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">첫 구매 할인 안내</a>
+                </div>
+              </td>
+              <td><span class="status-badge draft">초안</span></td>
+              <td><span class="funnel-badge purchase">구매 전환</span></td>
+              <td><span class="service-icon popup">📢</span></td>
+              <td class="num">-</td>
+              <td class="num">-</td>
+              <td class="num">-</td>
+              <td class="num">-</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">VIP 고객 전용 혜택</a>
+                </div>
+              </td>
+              <td><span class="status-badge draft">초안</span></td>
+              <td><span class="funnel-badge repurchase">재구매</span></td>
+              <td><span class="service-icon chat">💬</span></td>
+              <td class="num">-</td>
+              <td class="num">-</td>
+              <td class="num">-</td>
+              <td class="num">-</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="campaign-name">
+                  <a href="#">이벤트 종료 - 여름 세일</a>
+                </div>
+              </td>
+              <td><span class="status-badge ended">종료됨</span></td>
+              <td><span class="funnel-badge purchase">구매 전환</span></td>
+              <td><span class="service-icon popup">📢</span></td>
+              <td class="num">8,333</td>
+              <td class="num">13.7%</td>
+              <td class="num">1.9%</td>
+              <td class="num">1.0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // URL 파라미터로 필터 적용
+    const urlParams = new URLSearchParams(window.location.search);
+    const funnelParam = urlParams.get('funnel');
+
+    if (funnelParam) {
+      const funnelFilter = document.getElementById('funnel-filter');
+      const funnelLabels = {
+        'signup': '가입 유도',
+        'purchase': '구매 전환',
+        'repurchase': '재구매'
+      };
+      if (funnelLabels[funnelParam]) {
+        funnelFilter.textContent = funnelLabels[funnelParam] + ' ✕';
+        funnelFilter.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
