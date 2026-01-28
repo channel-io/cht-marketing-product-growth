@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마케팅 홈 (연동 전) - 채널톡</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f5f5f5;
+      color: #1a1a1a;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .container { display: flex; min-height: 100vh; }
+
+    /* 사이드바 */
+    .sidebar {
+      width: 200px;
+      background: #fff;
+      border-right: 1px solid #e5e5e5;
+      padding: 16px 0;
+      flex-shrink: 0;
+    }
+    .sidebar-title { font-size: 15px; font-weight: 600; padding: 8px 16px; color: #1a1a1a; }
+    .sidebar-menu { list-style: none; margin-top: 8px; }
+    .sidebar-menu li {
+      padding: 10px 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #666;
+      font-size: 14px;
+    }
+    .sidebar-menu li:hover { background: #f5f5f5; }
+    .sidebar-menu li.active { background: #f0f0ff; color: #5c5cff; font-weight: 500; }
+
+    /* 메인 */
+    .main { flex: 1; padding: 24px 32px; overflow-y: auto; }
+    .page-header { margin-bottom: 24px; }
+    .page-title { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+    .page-description { color: #666; font-size: 14px; }
+
+    /* 배너 */
+    .warning-banner {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .warning-banner-content { display: flex; align-items: flex-start; gap: 12px; }
+    .warning-banner-icon { font-size: 20px; }
+    .warning-banner-text h4 { font-size: 14px; font-weight: 600; color: #92400e; margin-bottom: 4px; }
+    .warning-banner-text p { font-size: 13px; color: #a16207; }
+    .btn-warning { background: #f59e0b; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; }
+    .btn-warning:hover { background: #d97706; }
+
+    /* 섹션 */
+    .section { margin-bottom: 32px; }
+    .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .section-title { font-size: 15px; font-weight: 600; }
+    .section-divider { height: 1px; background: #e5e5e5; margin: 24px 0; }
+
+    /* 마케팅 카드 */
+    .marketing-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      margin-bottom: 12px;
+    }
+    .marketing-card.recommended { border: 2px solid #5c5cff; }
+    .marketing-card.locked {
+      background: #fafafa;
+      border: 1px solid #e5e5e5;
+      opacity: 0.8;
+    }
+    .marketing-card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+    .marketing-card-left { flex: 1; }
+    .ai-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 500; margin-bottom: 8px;
+    }
+    .lock-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: #e5e5e5; color: #666; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 500; margin-bottom: 8px;
+    }
+    .marketing-card-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .marketing-card-title.locked { color: #999; }
+    .marketing-card-desc { font-size: 13px; color: #666; margin-bottom: 12px; }
+    .marketing-card-message { background: #f8f9fa; border-radius: 8px; padding: 12px; font-size: 13px; color: #444; margin-bottom: 12px; }
+    .marketing-card-message::before { content: "💬 "; }
+    .marketing-card-effect { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #059669; font-weight: 500; }
+    .marketing-card-actions { display: flex; align-items: center; gap: 8px; margin-top: 16px; }
+    .marketing-card-lock-notice {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; color: #666;
+      margin-top: 12px;
+      padding: 12px;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+
+    /* 버튼 */
+    .btn { padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: #5c5cff; color: #fff; }
+    .btn-primary:hover { background: #4a4ae0; }
+    .btn-secondary { background: #f5f5f5; color: #666; }
+    .btn-secondary:hover { background: #e8e8e8; }
+    .btn-outline { background: #fff; color: #5c5cff; border: 1px solid #5c5cff; }
+    .btn-outline:hover { background: #f0f0ff; }
+    .btn-disabled { background: #e5e5e5; color: #999; cursor: not-allowed; }
+
+    /* 토글 */
+    .toggle-switch {
+      position: relative; width: 44px; height: 24px;
+      background: #ddd; border-radius: 12px; cursor: pointer; transition: all 0.2s;
+    }
+    .toggle-switch.disabled { opacity: 0.5; cursor: not-allowed; }
+    .toggle-switch::after {
+      content: ""; position: absolute; width: 20px; height: 20px;
+      background: #fff; border-radius: 50%; top: 2px; left: 2px;
+      transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .more-link { display: flex; align-items: center; gap: 4px; color: #5c5cff; font-size: 13px; cursor: pointer; margin-top: 8px; }
+    .more-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <div class="sidebar-title">마케팅</div>
+      <ul class="sidebar-menu">
+        <li class="active"><span>🏠</span> 홈</li>
+        <li><span>📨</span> 일회성</li>
+        <li><span>🔄</span> 캠페인</li>
+        <li><span>📋</span> 마케팅 레시피</li>
+        <li><span>📖</span> 사용 가이드</li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <div class="page-header">
+        <h1 class="page-title">마케팅 홈</h1>
+        <p class="page-description">내 쇼핑몰에 맞는 마케팅이 준비되어 있어요. 켜기만 하면 바로 시작할 수 있어요.</p>
+      </div>
+
+      <!-- 연동 유도 배너 -->
+      <div class="warning-banner">
+        <div class="warning-banner-content">
+          <span class="warning-banner-icon">⚠️</span>
+          <div class="warning-banner-text">
+            <h4>카페24 연동이 필요한 기능이 있어요</h4>
+            <p>연동하면 장바구니, 구매 데이터를 활용한 마케팅이 가능해요</p>
+          </div>
+        </div>
+        <button class="btn-warning">카페24 연동하기</button>
+      </div>
+
+      <!-- 지금 바로 사용 가능 -->
+      <div class="section">
+        <div class="section-header">
+          <span>✅</span>
+          <span class="section-title">지금 바로 사용 가능</span>
+        </div>
+
+        <div class="marketing-card recommended">
+          <div class="marketing-card-header">
+            <div class="marketing-card-left">
+              <div class="ai-badge">🤖 AI 추천</div>
+              <div class="marketing-card-title">회원가입 유도</div>
+              <div class="marketing-card-desc">처음 방문한 고객에게 가입 혜택 안내</div>
+              <div class="marketing-card-message">"지금 가입하면 10% 할인쿠폰 드려요"</div>
+              <div class="marketing-card-effect">📈 예상 효과: 전환율 +5~10%p</div>
+            </div>
+            <div class="toggle-switch"></div>
+          </div>
+          <div class="marketing-card-actions">
+            <button class="btn btn-secondary">미리보기</button>
+            <button class="btn btn-primary">켜기</button>
+          </div>
+        </div>
+
+        <div class="more-link">+ 다른 마케팅 더 보기</div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- 연동 후 사용 가능 -->
+      <div class="section">
+        <div class="section-header">
+          <span>🔒</span>
+          <span class="section-title">연동 후 사용 가능</span>
+        </div>
+
+        <div class="marketing-card locked">
+          <div class="marketing-card-header">
+            <div class="marketing-card-left">
+              <div class="lock-badge">🔒 잠금</div>
+              <div class="marketing-card-title locked">장바구니 리마인드</div>
+              <div class="marketing-card-desc">담아두고 안 산 고객에게 다시 알림</div>
+            </div>
+            <div class="toggle-switch disabled"></div>
+          </div>
+          <div class="marketing-card-lock-notice">
+            <span>ℹ️</span>
+            <span>장바구니 데이터를 가져오려면 카페24 연동이 필요해요</span>
+            <button class="btn btn-outline" style="margin-left: auto;">연동하기</button>
+          </div>
+        </div>
+
+        <div class="marketing-card locked">
+          <div class="marketing-card-header">
+            <div class="marketing-card-left">
+              <div class="lock-badge">🔒 잠금</div>
+              <div class="marketing-card-title locked">재구매 유도</div>
+              <div class="marketing-card-desc">구매 후 30일 지난 고객에게 재방문 유도</div>
+            </div>
+            <div class="toggle-switch disabled"></div>
+          </div>
+          <div class="marketing-card-lock-notice">
+            <span>ℹ️</span>
+            <span>구매 데이터를 가져오려면 카페24 연동이 필요해요</span>
+            <button class="btn btn-outline" style="margin-left: auto;">연동하기</button>
+          </div>
+        </div>
+
+        <div class="marketing-card locked">
+          <div class="marketing-card-header">
+            <div class="marketing-card-left">
+              <div class="lock-badge">🔒 잠금</div>
+              <div class="marketing-card-title locked">최근 본 상품 추천</div>
+              <div class="marketing-card-desc">관심 있게 본 상품을 다시 보여주기</div>
+            </div>
+            <div class="toggle-switch disabled"></div>
+          </div>
+          <div class="marketing-card-lock-notice">
+            <span>ℹ️</span>
+            <span>상품 조회 데이터를 가져오려면 카페24 연동이 필요해요</span>
+            <button class="btn btn-outline" style="margin-left: auto;">연동하기</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>

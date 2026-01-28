@@ -6,12 +6,7 @@
   <title>마케팅 홈 - 채널톡</title>
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: #f5f5f5;
@@ -19,11 +14,7 @@
       font-size: 14px;
       line-height: 1.5;
     }
-
-    .container {
-      display: flex;
-      min-height: 100vh;
-    }
+    .container { display: flex; min-height: 100vh; }
 
     /* 사이드바 */
     .sidebar {
@@ -33,19 +24,8 @@
       padding: 16px 0;
       flex-shrink: 0;
     }
-
-    .sidebar-title {
-      font-size: 15px;
-      font-weight: 600;
-      padding: 8px 16px;
-      color: #1a1a1a;
-    }
-
-    .sidebar-menu {
-      list-style: none;
-      margin-top: 8px;
-    }
-
+    .sidebar-title { font-size: 15px; font-weight: 600; padding: 8px 16px; color: #1a1a1a; }
+    .sidebar-menu { list-style: none; margin-top: 8px; }
     .sidebar-menu li {
       padding: 10px 16px;
       cursor: pointer;
@@ -55,48 +35,16 @@
       color: #666;
       font-size: 14px;
     }
+    .sidebar-menu li:hover { background: #f5f5f5; }
+    .sidebar-menu li.active { background: #f0f0ff; color: #5c5cff; font-weight: 500; }
 
-    .sidebar-menu li:hover {
-      background: #f5f5f5;
-    }
+    /* 메인 */
+    .main { flex: 1; padding: 24px 32px; overflow-y: auto; }
+    .page-header { margin-bottom: 24px; }
+    .page-title { font-size: 20px; font-weight: 600; margin-bottom: 8px; }
+    .page-description { color: #666; font-size: 14px; }
 
-    .sidebar-menu li.active {
-      background: #f0f0ff;
-      color: #5c5cff;
-      font-weight: 500;
-    }
-
-    .sidebar-menu li .icon {
-      width: 18px;
-      height: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* 메인 콘텐츠 */
-    .main {
-      flex: 1;
-      padding: 24px 32px;
-      overflow-y: auto;
-    }
-
-    .page-header {
-      margin-bottom: 24px;
-    }
-
-    .page-title {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-
-    .page-description {
-      color: #666;
-      font-size: 14px;
-    }
-
-    /* 고객 여정 카드 */
+    /* 고객 여정 */
     .journey-card {
       background: #fff;
       border-radius: 12px;
@@ -104,120 +52,31 @@
       margin-bottom: 24px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
     }
-
-    .journey-title {
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 20px;
-      color: #1a1a1a;
-    }
-
-    .journey-flow {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-
-    .journey-step {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-    }
-
+    .journey-title { font-size: 15px; font-weight: 600; margin-bottom: 20px; }
+    .journey-flow { display: flex; align-items: center; justify-content: space-between; padding: 0 20px; }
+    .journey-step { display: flex; flex-direction: column; align-items: center; }
     .journey-step-box {
-      width: 100px;
-      height: 60px;
+      width: 100px; height: 60px;
       background: #f8f8ff;
       border: 2px solid #e0e0ff;
       border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-weight: 500;
-      color: #5c5cff;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      font-weight: 500; color: #5c5cff;
     }
+    .journey-step-box.warning { background: #fff5f5; border-color: #ffcccc; color: #e53e3e; }
+    .journey-step-box .label { font-size: 13px; }
+    .journey-step-box .count { font-size: 16px; font-weight: 600; margin-top: 2px; }
+    .journey-step-rate { margin-top: 8px; font-size: 12px; color: #888; }
+    .journey-step-rate.low { color: #e53e3e; font-weight: 500; }
+    .journey-step-rate .badge { background: #fee2e2; color: #e53e3e; padding: 2px 6px; border-radius: 4px; font-size: 11px; margin-left: 4px; }
+    .journey-arrow { font-size: 20px; color: #ccc; margin: 0 8px; }
 
-    .journey-step-box.warning {
-      background: #fff5f5;
-      border-color: #ffcccc;
-      color: #e53e3e;
-    }
-
-    .journey-step-box .label {
-      font-size: 13px;
-    }
-
-    .journey-step-box .count {
-      font-size: 16px;
-      font-weight: 600;
-      margin-top: 2px;
-    }
-
-    .journey-step-rate {
-      margin-top: 8px;
-      font-size: 12px;
-      color: #888;
-    }
-
-    .journey-step-rate.low {
-      color: #e53e3e;
-      font-weight: 500;
-    }
-
-    .journey-step-rate .badge {
-      background: #fee2e2;
-      color: #e53e3e;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-size: 11px;
-      margin-left: 4px;
-    }
-
-    .journey-arrow {
-      font-size: 20px;
-      color: #ccc;
-      margin: 0 8px;
-    }
-
-    /* 추천 마케팅 섹션 */
-    .section {
-      margin-bottom: 24px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-    }
-
-    .section-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: #1a1a1a;
-    }
-
-    .section-subtitle {
-      font-size: 13px;
-      color: #888;
-    }
-
-    .section-badge {
-      background: #fee2e2;
-      color: #e53e3e;
-      padding: 3px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: 500;
-    }
-
-    .section-badge.good {
-      background: #d1fae5;
-      color: #059669;
-    }
+    /* 섹션 */
+    .section { margin-bottom: 24px; }
+    .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .section-title { font-size: 15px; font-weight: 600; }
+    .section-badge { background: #fee2e2; color: #e53e3e; padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; }
+    .section-badge.good { background: #d1fae5; color: #059669; }
 
     /* 마케팅 카드 */
     .marketing-card {
@@ -227,196 +86,146 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.08);
       margin-bottom: 12px;
     }
-
-    .marketing-card.recommended {
-      border: 2px solid #5c5cff;
-    }
-
-    .marketing-card-header {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 12px;
-    }
-
-    .marketing-card-left {
-      flex: 1;
-    }
-
+    .marketing-card.recommended { border: 2px solid #5c5cff; }
+    .marketing-card.active { border: 2px solid #059669; background: #f0fdf4; }
+    .marketing-card-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
+    .marketing-card-left { flex: 1; }
     .ai-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
+      display: inline-flex; align-items: center; gap: 4px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 500; margin-bottom: 8px;
+    }
+    .active-badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      background: #059669; color: #fff; padding: 4px 10px; border-radius: 12px; font-size: 11px; font-weight: 500; margin-bottom: 8px;
+    }
+    .marketing-card-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .marketing-card-desc { font-size: 13px; color: #666; margin-bottom: 12px; }
+    .marketing-card-message { background: #f8f9fa; border-radius: 8px; padding: 12px; font-size: 13px; color: #444; margin-bottom: 12px; }
+    .marketing-card-message::before { content: "💬 "; }
+    .marketing-card-effect { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #059669; font-weight: 500; }
+    .marketing-card-stats { display: flex; gap: 16px; font-size: 13px; color: #666; margin-bottom: 12px; padding: 12px; background: #f8f9fa; border-radius: 8px; }
+    .marketing-card-stats span { display: flex; align-items: center; gap: 4px; }
+    .marketing-card-actions { display: flex; align-items: center; gap: 8px; margin-top: 16px; }
+
+    /* 버튼 */
+    .btn { padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; border: none; transition: all 0.2s; }
+    .btn-primary { background: #5c5cff; color: #fff; }
+    .btn-primary:hover { background: #4a4ae0; }
+    .btn-secondary { background: #f5f5f5; color: #666; }
+    .btn-secondary:hover { background: #e8e8e8; }
+    .btn-danger { background: #fee2e2; color: #e53e3e; }
+    .btn-danger:hover { background: #fecaca; }
+
+    /* 토글 */
+    .toggle-switch {
+      position: relative; width: 44px; height: 24px;
+      background: #ddd; border-radius: 12px; cursor: pointer; transition: all 0.2s;
+    }
+    .toggle-switch.active { background: #5c5cff; }
+    .toggle-switch::after {
+      content: ""; position: absolute; width: 20px; height: 20px;
+      background: #fff; border-radius: 50%; top: 2px; left: 2px;
+      transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    .toggle-switch.active::after { left: 22px; }
+
+    .more-link { display: flex; align-items: center; gap: 4px; color: #5c5cff; font-size: 13px; cursor: pointer; margin-top: 8px; }
+    .more-link:hover { text-decoration: underline; }
+    .info-banner { background: #f0f0ff; border-radius: 8px; padding: 12px 16px; margin-bottom: 24px; display: flex; align-items: center; gap: 8px; font-size: 13px; color: #5c5cff; }
+
+    /* 모달 */
+    .modal-overlay {
+      display: none;
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      align-items: center; justify-content: center;
+      z-index: 1000;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal {
+      background: #fff;
+      border-radius: 16px;
+      max-width: 480px;
+      width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+    .modal-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid #eee;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .modal-header h3 { font-size: 17px; font-weight: 600; }
+    .modal-close { background: none; border: none; font-size: 20px; cursor: pointer; color: #999; }
+    .modal-body { padding: 24px; }
+    .modal-footer { padding: 16px 24px; border-top: 1px solid #eee; display: flex; justify-content: flex-end; gap: 8px; }
+
+    /* 미리보기 모달 */
+    .preview-device {
+      background: #1a1a1a;
+      border-radius: 24px;
+      padding: 12px;
+      max-width: 280px;
+      margin: 0 auto 24px;
+    }
+    .preview-screen {
+      background: #fff;
+      border-radius: 16px;
+      padding: 20px;
+      min-height: 200px;
+    }
+    .preview-popup {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: #fff;
-      padding: 4px 10px;
       border-radius: 12px;
-      font-size: 11px;
-      font-weight: 500;
-      margin-bottom: 8px;
+      padding: 20px;
+      text-align: center;
     }
-
-    .marketing-card-title {
-      font-size: 15px;
-      font-weight: 600;
-      color: #1a1a1a;
-      margin-bottom: 4px;
-    }
-
-    .marketing-card-desc {
-      font-size: 13px;
-      color: #666;
-      margin-bottom: 12px;
-    }
-
-    .marketing-card-message {
-      background: #f8f9fa;
-      border-radius: 8px;
-      padding: 12px;
-      font-size: 13px;
-      color: #444;
-      margin-bottom: 12px;
-    }
-
-    .marketing-card-message::before {
-      content: "💬 ";
-    }
-
-    .marketing-card-effect {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 13px;
-      color: #059669;
-      font-weight: 500;
-    }
-
-    .marketing-card-actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 16px;
-    }
-
-    .btn {
-      padding: 8px 16px;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: 500;
-      cursor: pointer;
-      border: none;
-      transition: all 0.2s;
-    }
-
-    .btn-primary {
-      background: #5c5cff;
-      color: #fff;
-    }
-
-    .btn-primary:hover {
-      background: #4a4ae0;
-    }
-
-    .btn-secondary {
-      background: #f5f5f5;
-      color: #666;
-    }
-
-    .btn-secondary:hover {
-      background: #e8e8e8;
-    }
-
-    /* 토글 스위치 */
-    .toggle-switch {
-      position: relative;
-      width: 44px;
-      height: 24px;
-      background: #ddd;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .toggle-switch.active {
-      background: #5c5cff;
-    }
-
-    .toggle-switch::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
+    .preview-popup h4 { font-size: 16px; margin-bottom: 8px; }
+    .preview-popup p { font-size: 14px; margin-bottom: 16px; opacity: 0.9; }
+    .preview-popup button {
       background: #fff;
-      border-radius: 50%;
-      top: 2px;
-      left: 2px;
-      transition: all 0.2s;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    }
-
-    .toggle-switch.active::after {
-      left: 22px;
-    }
-
-    /* 더 보기 링크 */
-    .more-link {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      color: #5c5cff;
-      font-size: 13px;
-      cursor: pointer;
-      margin-top: 8px;
-    }
-
-    .more-link:hover {
-      text-decoration: underline;
-    }
-
-    /* 배너 */
-    .info-banner {
-      background: #f0f0ff;
+      color: #667eea;
+      border: none;
+      padding: 10px 20px;
       border-radius: 8px;
-      padding: 12px 16px;
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 13px;
-      color: #5c5cff;
+      font-weight: 600;
+      cursor: pointer;
     }
+    .preview-conditions { margin-top: 16px; }
+    .preview-conditions h4 { font-size: 14px; font-weight: 600; margin-bottom: 12px; color: #666; }
+    .preview-conditions ul { list-style: none; }
+    .preview-conditions li { font-size: 13px; color: #666; padding: 6px 0; display: flex; align-items: center; gap: 8px; }
+
+    /* 확인 모달 */
+    .confirm-card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .confirm-card-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .confirm-card-desc { font-size: 13px; color: #666; margin-bottom: 8px; }
+    .confirm-card-message { font-size: 13px; color: #444; }
+    .confirm-card-message::before { content: "💬 "; }
+    .confirm-notice { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: #666; background: #f0f0ff; padding: 12px; border-radius: 8px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- 사이드바 -->
     <nav class="sidebar">
       <div class="sidebar-title">마케팅</div>
       <ul class="sidebar-menu">
-        <li class="active">
-          <span class="icon">🏠</span>
-          홈
-        </li>
-        <li>
-          <span class="icon">📨</span>
-          일회성
-        </li>
-        <li>
-          <span class="icon">🔄</span>
-          캠페인
-        </li>
-        <li>
-          <span class="icon">📋</span>
-          마케팅 레시피
-        </li>
-        <li>
-          <span class="icon">📖</span>
-          사용 가이드
-        </li>
+        <li class="active"><span>🏠</span> 홈</li>
+        <li><span>📨</span> 일회성</li>
+        <li><span>🔄</span> 캠페인</li>
+        <li><span>📋</span> 마케팅 레시피</li>
+        <li><span>📖</span> 사용 가이드</li>
       </ul>
     </nav>
 
-    <!-- 메인 콘텐츠 -->
     <main class="main">
       <div class="page-header">
         <h1 class="page-title">마케팅 홈</h1>
@@ -428,60 +237,38 @@
         <span>AI가 내 쇼핑몰 데이터를 분석해서 가장 효과적인 마케팅을 추천해드려요.</span>
       </div>
 
-      <!-- 고객 여정 -->
       <div class="journey-card">
         <div class="journey-title">내 쇼핑몰 고객 현황</div>
         <div class="journey-flow">
           <div class="journey-step">
-            <div class="journey-step-box">
-              <span class="label">방문</span>
-              <span class="count">1,200명</span>
-            </div>
+            <div class="journey-step-box"><span class="label">방문</span><span class="count">1,200명</span></div>
           </div>
-
           <span class="journey-arrow">→</span>
-
           <div class="journey-step">
-            <div class="journey-step-box warning">
-              <span class="label">가입</span>
-              <span class="count">180명</span>
-            </div>
-            <div class="journey-step-rate low">
-              15% <span class="badge">개선 필요</span>
-            </div>
+            <div class="journey-step-box warning"><span class="label">가입</span><span class="count">180명</span></div>
+            <div class="journey-step-rate low">15% <span class="badge">개선 필요</span></div>
           </div>
-
           <span class="journey-arrow">→</span>
-
           <div class="journey-step">
-            <div class="journey-step-box">
-              <span class="label">구매</span>
-              <span class="count">45명</span>
-            </div>
+            <div class="journey-step-box"><span class="label">구매</span><span class="count">45명</span></div>
             <div class="journey-step-rate">25%</div>
           </div>
-
           <span class="journey-arrow">→</span>
-
           <div class="journey-step">
-            <div class="journey-step-box">
-              <span class="label">재구매</span>
-              <span class="count">12명</span>
-            </div>
+            <div class="journey-step-box"><span class="label">재구매</span><span class="count">12명</span></div>
             <div class="journey-step-rate">27%</div>
           </div>
         </div>
       </div>
 
-      <!-- 방문 → 가입 단계 -->
+      <!-- 방문 → 가입 -->
       <div class="section">
         <div class="section-header">
           <span>💡</span>
           <span class="section-title">방문 → 가입 단계를 개선해보세요</span>
           <span class="section-badge">전환율 15% · 업계 평균 25%</span>
         </div>
-
-        <div class="marketing-card recommended">
+        <div class="marketing-card recommended" id="card-signup">
           <div class="marketing-card-header">
             <div class="marketing-card-left">
               <div class="ai-badge">🤖 AI 추천</div>
@@ -490,25 +277,23 @@
               <div class="marketing-card-message">"지금 가입하면 10% 할인쿠폰 드려요"</div>
               <div class="marketing-card-effect">📈 예상 효과: 전환율 +5~10%p</div>
             </div>
-            <div class="toggle-switch" onclick="this.classList.toggle('active')"></div>
+            <div class="toggle-switch" id="toggle-signup"></div>
           </div>
           <div class="marketing-card-actions">
-            <button class="btn btn-secondary">미리보기</button>
-            <button class="btn btn-primary">켜기</button>
+            <button class="btn btn-secondary" onclick="openPreviewModal()">미리보기</button>
+            <button class="btn btn-primary" id="btn-signup" onclick="openConfirmModal()">켜기</button>
           </div>
         </div>
-
         <div class="more-link">+ 다른 마케팅 더 보기</div>
       </div>
 
-      <!-- 가입 → 구매 단계 -->
+      <!-- 가입 → 구매 -->
       <div class="section">
         <div class="section-header">
           <span>📍</span>
           <span class="section-title">가입 → 구매 단계</span>
           <span class="section-badge good">전환율 25% · 업계 평균 20% ✓ 양호</span>
         </div>
-
         <div class="marketing-card">
           <div class="marketing-card-header">
             <div class="marketing-card-left">
@@ -516,25 +301,23 @@
               <div class="marketing-card-desc">담아두고 안 산 고객에게 다시 알림</div>
               <div class="marketing-card-message">"담아두신 상품이 기다리고 있어요"</div>
             </div>
-            <div class="toggle-switch" onclick="this.classList.toggle('active')"></div>
+            <div class="toggle-switch"></div>
           </div>
           <div class="marketing-card-actions">
             <button class="btn btn-secondary">미리보기</button>
             <button class="btn btn-primary">켜기</button>
           </div>
         </div>
-
         <div class="more-link">+ 다른 마케팅 더 보기</div>
       </div>
 
-      <!-- 구매 → 재구매 단계 -->
+      <!-- 구매 → 재구매 -->
       <div class="section">
         <div class="section-header">
           <span>📍</span>
           <span class="section-title">구매 → 재구매 단계</span>
           <span class="section-badge good">전환율 27% · 업계 평균 25% ✓ 양호</span>
         </div>
-
         <div class="marketing-card">
           <div class="marketing-card-header">
             <div class="marketing-card-left">
@@ -542,18 +325,113 @@
               <div class="marketing-card-desc">구매 후 30일 지난 고객에게 재방문 유도</div>
               <div class="marketing-card-message">"다시 만나서 반가워요! 오늘만 15% 할인"</div>
             </div>
-            <div class="toggle-switch" onclick="this.classList.toggle('active')"></div>
+            <div class="toggle-switch"></div>
           </div>
           <div class="marketing-card-actions">
             <button class="btn btn-secondary">미리보기</button>
             <button class="btn btn-primary">켜기</button>
           </div>
         </div>
-
         <div class="more-link">+ 다른 마케팅 더 보기</div>
       </div>
-
     </main>
   </div>
+
+  <!-- 미리보기 모달 -->
+  <div class="modal-overlay" id="preview-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>미리보기</h3>
+        <button class="modal-close" onclick="closePreviewModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <p style="text-align: center; color: #666; margin-bottom: 16px;">고객에게 이렇게 보여요</p>
+        <div class="preview-device">
+          <div class="preview-screen">
+            <div class="preview-popup">
+              <h4>🎁 특별 혜택 안내</h4>
+              <p>지금 가입하면<br>10% 할인쿠폰 드려요</p>
+              <button>회원가입하기</button>
+            </div>
+          </div>
+        </div>
+        <div class="preview-conditions">
+          <h4>발송 조건</h4>
+          <ul>
+            <li><span>👤</span> 대상: 처음 방문한 고객</li>
+            <li><span>⏱️</span> 시점: 페이지 방문 후 3초</li>
+            <li><span>📱</span> 채널: 팝업</li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closePreviewModal()">닫기</button>
+        <button class="btn btn-primary">메시지 수정하기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 켜기 확인 모달 -->
+  <div class="modal-overlay" id="confirm-modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h3>이 마케팅을 시작할까요?</h3>
+        <button class="modal-close" onclick="closeConfirmModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="confirm-card">
+          <div class="confirm-card-title">회원가입 유도</div>
+          <div class="confirm-card-desc">처음 방문한 고객에게 가입 혜택 안내</div>
+          <div class="confirm-card-message">"지금 가입하면 10% 할인쿠폰 드려요"</div>
+        </div>
+        <div class="confirm-notice">
+          <span>ℹ️</span>
+          <span>시작하면 조건에 맞는 고객에게 자동으로 발송됩니다.</span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeConfirmModal()">취소</button>
+        <button class="btn btn-primary" onclick="activateMarketing()">시작하기</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openPreviewModal() {
+      document.getElementById('preview-modal').classList.add('show');
+    }
+    function closePreviewModal() {
+      document.getElementById('preview-modal').classList.remove('show');
+    }
+    function openConfirmModal() {
+      document.getElementById('confirm-modal').classList.add('show');
+    }
+    function closeConfirmModal() {
+      document.getElementById('confirm-modal').classList.remove('show');
+    }
+    function activateMarketing() {
+      closeConfirmModal();
+      const card = document.getElementById('card-signup');
+      const toggle = document.getElementById('toggle-signup');
+      const btn = document.getElementById('btn-signup');
+
+      card.classList.remove('recommended');
+      card.classList.add('active');
+      toggle.classList.add('active');
+
+      // AI 추천 뱃지를 작동 중 뱃지로 변경
+      const aiBadge = card.querySelector('.ai-badge');
+      aiBadge.className = 'active-badge';
+      aiBadge.innerHTML = '✓ 작동 중';
+
+      // 버튼 변경
+      btn.textContent = '끄기';
+      btn.className = 'btn btn-danger';
+
+      // 효과 대신 통계 표시
+      const effect = card.querySelector('.marketing-card-effect');
+      effect.outerHTML = '<div class="marketing-card-stats"><span>📨 발송 0건</span><span>👀 열람 0건</span><span>🛒 전환 0건</span></div>';
+    }
+  </script>
 </body>
 </html>
