@@ -80,7 +80,7 @@
     }
     .filter-tab:hover { background: #f5f5f5; }
     .filter-tab.active { background: #5c5cff; color: #fff; }
-    .filter-dropdown {
+    .filter-select {
       padding: 8px 12px;
       font-size: 13px;
       border: 1px solid #e5e5e5;
@@ -88,11 +88,11 @@
       background: #fff;
       color: #666;
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      outline: none;
+      min-width: 120px;
     }
-    .filter-dropdown.active { border-color: #5c5cff; color: #5c5cff; background: #f0f0ff; }
+    .filter-select:focus { border-color: #5c5cff; }
+    .filter-select.active { border-color: #5c5cff; color: #5c5cff; background: #f0f0ff; }
     .filter-count {
       background: #e5e5e5;
       color: #666;
@@ -238,12 +238,17 @@
           <div class="filter-tab">초안 <span class="filter-count">5</span></div>
           <div class="filter-tab">종료됨 <span class="filter-count">3</span></div>
         </div>
-        <div class="filter-dropdown" id="funnel-filter">
-          퍼널 단계 ▼
-        </div>
-        <div class="filter-dropdown">
-          서비스 ▼
-        </div>
+        <select class="filter-select" id="funnel-filter">
+          <option value="">퍼널 단계 전체</option>
+          <option value="signup">가입 유도</option>
+          <option value="purchase">구매 전환</option>
+          <option value="repurchase">재구매</option>
+        </select>
+        <select class="filter-select" id="service-filter">
+          <option value="">서비스 전체</option>
+          <option value="popup">팝업</option>
+          <option value="chat">채팅</option>
+        </select>
         <div class="search-box">
           <span>🔍</span>
           <input type="text" placeholder="캠페인에서 검색">
@@ -385,21 +390,64 @@
   </div>
 
   <script>
-    // URL 파라미터로 필터 적용
+    const funnelFilter = document.getElementById('funnel-filter');
+    const serviceFilter = document.getElementById('service-filter');
+    const tableRows = document.querySelectorAll('.campaign-table tbody tr');
+
+    // URL 파라미터로 초기 필터 적용
     const urlParams = new URLSearchParams(window.location.search);
     const funnelParam = urlParams.get('funnel');
 
     if (funnelParam) {
-      const funnelFilter = document.getElementById('funnel-filter');
-      const funnelLabels = {
-        'signup': '가입 유도',
-        'purchase': '구매 전환',
-        'repurchase': '재구매'
-      };
-      if (funnelLabels[funnelParam]) {
-        funnelFilter.textContent = funnelLabels[funnelParam] + ' ✕';
-        funnelFilter.classList.add('active');
+      funnelFilter.value = funnelParam;
+      funnelFilter.classList.add('active');
+    }
+
+    // 필터 변경 시 테이블 필터링
+    function applyFilters() {
+      const selectedFunnel = funnelFilter.value;
+      const selectedService = serviceFilter.value;
+
+      // 셀렉트 active 스타일
+      funnelFilter.classList.toggle('active', selectedFunnel !== '');
+      serviceFilter.classList.toggle('active', selectedService !== '');
+
+      tableRows.forEach(row => {
+        const funnelBadge = row.querySelector('.funnel-badge');
+        const serviceIcon = row.querySelector('.service-icon');
+
+        let showByFunnel = true;
+        let showByService = true;
+
+        if (selectedFunnel && funnelBadge) {
+          showByFunnel = funnelBadge.classList.contains(selectedFunnel);
+        }
+
+        if (selectedService && serviceIcon) {
+          showByService = serviceIcon.classList.contains(selectedService);
+        }
+
+        row.style.display = (showByFunnel && showByService) ? '' : 'none';
+      });
+
+      // 카운트 업데이트
+      updateCounts();
+    }
+
+    function updateCounts() {
+      const visibleRows = document.querySelectorAll('.campaign-table tbody tr:not([style*="display: none"])');
+      const totalCount = document.querySelector('.filter-tab.active .filter-count');
+      if (totalCount) {
+        totalCount.textContent = visibleRows.length;
       }
+    }
+
+    funnelFilter.addEventListener('change', applyFilters);
+    serviceFilter.addEventListener('change', applyFilters);
+
+    // 초기 필터 적용
+    if (funnelParam) {
+      applyFilters();
     }
   </script>
 </body>
