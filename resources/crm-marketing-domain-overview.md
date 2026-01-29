@@ -181,19 +181,19 @@ API      통합ID   행동 분석   조건 설정   발송      A/B 테스트
 ### 7.1 시장 규모
 
 **마케팅 자동화 시장**
-- 글로벌 마케팅 자동화 시장: ~$7B (2025) → ~$18B (2030)
-- 연평균 성장률: 12-15%
+- 글로벌 마케팅 자동화 시장: ~$7B (2025) → ~$18B (2030) [^1]
+- 연평균 성장률: 12-15% [^1]
 
 **마케팅 대상(디지털 소비자) 시장** — 성장의 기반
 
 | 지표 | 2025 | 2030 | 비고 |
 |------|------|------|------|
-| 디지털 구매자 | 27.7억 명 | ~33억+ 명 | 전 세계 인구의 33% → 40%+ |
-| 글로벌 이커머스 | $10.2조 | $21.2조 | CAGR 15.8% |
-| 모바일 인터넷 사용자 | 55억 명 | 65억 명 | 침투율 71% |
-| 모바일 앱 시장 | $253B | $626B | 2.5배 성장 |
-| 이커머스 비중 (전체 소매) | 20.5% | 23.7% | 오프라인→온라인 전환 지속 |
-| 디지털 결제 비중 | 66% | 79% | 현금/카드→디지털 전환 |
+| 디지털 구매자 | 27.7억 명 | ~33억+ 명 | 전 세계 인구의 33% → 40%+ [^2] |
+| 글로벌 이커머스 | $10.2조 | $21.2조 | CAGR 15.8% [^3] |
+| 모바일 인터넷 사용자 | 55억 명 | 65억 명 | 침투율 71% [^4] |
+| 모바일 앱 시장 | $253B | $626B | 2.5배 성장 [^5] |
+| 이커머스 비중 (전체 소매) | 20.5% | 23.7% | 오프라인→온라인 전환 지속 [^6] |
+| 디지털 결제 비중 | 66% | 79% | 현금/카드→디지털 전환 [^7] |
 
 **성장 동인**
 
@@ -201,11 +201,11 @@ API      통합ID   행동 분석   조건 설정   발송      A/B 테스트
 [디지털 소비자 증가] → [이커머스/앱 거래량 증가] → [마케팅 대상 고객 수 증가] → [마케팅 툴 수요 증가]
 ```
 
-1. **신흥국 중산층 확대**: 아시아에서만 2020~2030년 사이 14.7억 명 추가
-2. **오프라인→온라인 전환**: 소매의 디지털 비중 지속 증가
-3. **모바일 침투율 확대**: 스마트폰 보급률 76% → 92% (2030)
-4. **AI/자동화 필수화**: 늘어나는 고객을 수동으로 대응 불가
-5. **프라이버시 규제 강화**: 동의 관리, 데이터 추적 자동화 필요
+1. **신흥국 중산층 확대**: 아시아에서만 2020~2030년 사이 14.7억 명 추가 [^8]
+2. **오프라인→온라인 전환**: 소매의 디지털 비중 지속 증가 [^6]
+3. **모바일 침투율 확대**: 스마트폰 보급률 76% → 92% (2030) [^4]
+4. **AI/자동화 필수화**: 늘어나는 고객을 수동으로 대응 불가 [^9]
+5. **프라이버시 규제 강화**: 동의 관리, 데이터 추적 자동화 필요 [^9]
 
 ### 7.2 주요 플레이어 포지셔닝
 
@@ -257,3 +257,37 @@ API      통합ID   행동 분석   조건 설정   발송      A/B 테스트
 4. 적절한 **타이밍**에 (자동화)
 5. 적합한 **채널**로 전달하여
 6. **성과를 측정**하고 개선한다
+
+---
+
+## 참고 문헌
+
+[^1]: **Mordor Intelligence** - "Marketing Automation Software Market Size, Share & Industry Growth Outlook, 2030". 글로벌 마케팅 자동화 소프트웨어 시장 규모($7.23B → $18.36B)와 CAGR(12.9%) 데이터 발췌.
+https://www.mordorintelligence.com/industry-reports/global-marketing-automation-software-market-industry
+
+[^2]: **Shopify** - "What is Global Ecommerce? Trends and How to Expand Your Operation (2026)". 2025년 글로벌 디지털 구매자 수(27.7억 명, 전 세계 인구의 33%) 데이터 발췌.
+https://www.shopify.com/enterprise/blog/global-ecommerce-statistics
+
+[^3]: **Mordor Intelligence** - "Ecommerce Market Size, Trends & Growth Forecast Report 2030". 글로벌 이커머스 시장 규모($10.19조 → $21.22조)와 CAGR(15.8%) 데이터 발췌.
+https://www.mordorintelligence.com/industry-reports/global-ecommerce-market
+
+[^4]: **GSMA** - "The Mobile Economy 2025". 글로벌 모바일 인터넷 사용자 수(55억 → 65억), 침투율(71%), 스마트폰 보급률(76% → 92%) 데이터 발췌.
+https://www.gsma.com/solutions-and-impact/connectivity-for-good/mobile-economy/
+
+[^5]: **Sensor Tower** - "Mobile App Market Forecast 2030". 글로벌 모바일 앱 시장 규모($252.89B → $626.39B) 데이터 발췌.
+https://sensortower.com/blog/mobile-app-market-forecast-2030
+
+[^6]: **Shopify** - "What is Global Ecommerce?". 전체 소매 중 이커머스 비중(20.5% → 23.7%) 데이터 발췌.
+https://www.shopify.com/enterprise/blog/global-ecommerce-statistics
+
+[^7]: **Clearly Payments** - "Online Payments and the eCommerce Market in 2025". 디지털 결제 비중(66% → 79%) 데이터 발췌.
+https://www.clearlypayments.com/blog/online-payments-and-the-ecommerce-market-in-2025/
+
+[^8]: **Shopify** - "What is Global Ecommerce?". 아시아 중산층 증가 예측(2020~2030년 사이 14.7억 명 추가) 데이터 발췌.
+https://www.shopify.com/enterprise/blog/global-ecommerce-statistics
+
+[^9]: **Grand View Research** - "Marketing Automation Market Size | Industry Report, 2030". AI 기반 솔루션 채택, 개인화 마케팅, 프라이버시 규제 대응 등 시장 성장 동인 분석 발췌.
+https://www.grandviewresearch.com/industry-analysis/marketing-automation-software-market
+
+[^10]: **Destination CRM** - "The Best Marketing Automation: The 2025 CRM Industry Leader Awards". Salesforce(50%), HubSpot(34.4%) 등 주요 플레이어 시장 점유율 데이터 발췌.
+https://www.destinationcrm.com/Articles/Editorial/Magazine-Features/The-Best-Marketing-Automation-The-2025-CRM-Industry-Leader-Awards-171160.aspx
