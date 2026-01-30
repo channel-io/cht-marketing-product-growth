@@ -8,6 +8,23 @@
 
 ---
 
+## 데이터 추출 기준
+
+**데이터 소스**: Salesforce Event (미팅 로그) 총 17,510건
+
+| 트랙 | SOQL 필터 | 전체 | 추출 | 추출률 |
+|------|----------|------|------|--------|
+| Renewal | `Subject LIKE '%Renewal%'` | 1,579건 | 1,000건 | 63% |
+| Check-In | `Subject LIKE '%Check-In%'` | 3,641건 | 1,000건 | 27% |
+| PostSales/MI | `Subject LIKE '%PostSales%' OR '%MI Meeting%'` | 676건 | 676건 | 100% |
+| 1stOpp | `Subject LIKE '%1stOpp%' OR '%1stTeatime%'` | 2,685건 | 1,000건 | 37% |
+
+- 각 쿼리는 `ORDER BY ActivityDate DESC LIMIT 2000`으로 최신 데이터 우선 추출
+- Description 필드에서 키워드 검색 후 패턴 분석 (SOQL LIKE 제약으로 로컬 처리)
+- 제외 대상: Deal Close (4,813건), 기타/미분류 (4,116건) - 고객 인식 분석 목적과 무관
+
+---
+
 ## Executive Summary
 
 채널톡 마케팅 기능에 대한 고객 인식을 4개 트랙(이탈, 사용현황, 온보딩, 신규기대)으로 분석한 결과, **마케팅 기능의 낮은 채택률은 기능 자체의 문제보다 구조적 장벽에 기인**함을 확인했습니다.
