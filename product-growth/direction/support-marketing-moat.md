@@ -102,19 +102,46 @@
 | **연결 가치 부족** | 상담 데이터가 마케팅에 실제로 도움 되나? 태그 수준에선 제한적 |
 | **타겟 시장** | 통합 가치는 SMB에서만 유효, Mid-Market+는 전문 툴 선호 |
 
-### ✅ 실제 답변 (검증 완료)
+### ✅ 실제 답변: Intercom CEO 인터뷰 (2024.09.05)
 
 > **"We were unfocused. That was my fault. We built a horizontal tool at the start, tried to do all the things, moved up market, needed to pick a lane."**
 >
 > "우리는 집중하지 못했다. 내 잘못이다. 처음에 수평적 도구를 만들어 모든 것을 하려 했고, 상위 시장으로 갔다가, 결국 하나의 길을 선택해야 했다."
 
-— Intercom CEO Eoghan McCabe, [First Round Review 인터뷰](https://review.firstround.com/podcast/rebooting-intercom-eoghan-mccabe-on-defying-silicon-valley-orthodoxy-co-founder-ceo/)
+— Intercom CEO Eoghan McCabe, [First Round Review 인터뷰](https://review.firstround.com/podcast/rebooting-intercom-eoghan-mccabe-on-defying-silicon-valley-orthodoxy-co-founder-ceo/) (2024.09.05)
 
 **핵심:**
 - 조직 구조 문제 ❌
 - **집중 부족 문제 ⭕**
 - 모든 것을 하려다 → 모든 영역에서 중간만 함
 - "okay at many things" < "great at one thing"
+
+### Intercom 피벗 타임라인
+
+| 시점 | 사건 |
+|------|------|
+| ~2020 | 세일즈+마케팅+서포트 통합 툴로 운영 |
+| 2020 | CEO Eoghan McCabe가 CEO에서 물러남 (Chairman으로) |
+| 2022.10 | McCabe CEO 복귀, **Customer Service로 집중 결정** |
+| 2022-2023 | AI(Fin)에 $100M+ 투자, R&D 대부분 Fin에 집중 |
+| 2024.09 | First Round Review 인터뷰 (피벗 회고) |
+| 2024-2026 | 마케팅 기능 유지하되 **신규 개발 거의 없음** |
+
+### 피벗 후 Intercom의 마케팅 기능 현황 (2024-2026)
+
+| 영역 | 상태 | 업데이트 빈도 |
+|------|------|--------------|
+| AI/Fin | 핵심 투자 | 매우 활발 |
+| Support | 적극 개발 | 활발 |
+| Marketing | **유지만** | 거의 없음 |
+
+**구체적 상황:**
+- 이메일 캠페인, 아웃바운드 등 **기능은 있음**
+- 하지만 **적극적 개발 안 함** (유지 수준)
+- 개발 리소스는 **AI/서포트에 집중**
+- 결과적으로 "있긴 한데 방치" 상태
+
+→ 이게 "마케팅 확장 포기/후순위"의 실체
 
 ---
 
