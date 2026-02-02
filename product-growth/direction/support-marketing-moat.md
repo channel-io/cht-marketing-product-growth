@@ -122,29 +122,21 @@
 
 ---
 
-## 6. 글로벌 CS툴들의 방향성 (2024-2025)
+## 6. 글로벌 CS툴들의 방향성 (2024-2026)
 
 ### 질문
 
 > 상담 데이터 → 마케팅 성공 사례가 없다면, 글로벌 CS툴들은 마케팅 기능을 어떻게 가져가려 하는가?
 
-### 각 회사의 선택 (2024-2025)
+### 각 회사의 선택
 
 | 회사 | 핵심 전략 | 마케팅 방향 |
 |------|----------|------------|
-| **Intercom** | AI-first 피벗 (Fin AI에 $100M+ 투자) | 핵심 아님. "Proactive engagement" 정도 |
-| **Zendesk** | 고객 서비스/CX 올인 | **명시적으로 안 함**. Sell도 2027년 종료 |
-| **Freshworks** | Employee Experience (ITSM) | Freshmarketer 있지만 핵심 전략 아님 |
+| **Intercom** | AI-first 피벗. Fin AI에 $100M+ 투자, "거의 모든 R&D가 Fin에 집중". Fin Tasks로 복잡한 워크플로우 자동화 | 핵심 아님. 2024-2026 내내 변화 없음 |
+| **Zendesk** | 고객 서비스/CX 올인. 2026년 "Contextual Intelligence" (AI+데이터+인간 이해), AI 에이전트로 80% 이슈 자동 해결 목표 | **명시적으로 안 함**. Sell도 2027년 종료 |
+| **Freshworks** | Employee Experience (ITSM)에 집중. 2026년 $1B 매출 목표, AI를 "tailwind"로 봄 | Freshmarketer 있지만 핵심 전략 아님. 구체적 로드맵 없음 |
 
-### 2026년 업데이트
-
-| 회사 | 2026 방향 | 마케팅 관련 |
-|------|----------|------------|
-| **Intercom** | Fin에 올인 ("거의 모든 R&D가 Fin에 집중"), Fin Tasks로 복잡한 워크플로우 자동화 | 여전히 핵심 아님 |
-| **Zendesk** | Contextual Intelligence (AI+데이터+인간 이해), AI 에이전트로 80% 이슈 자동 해결 목표 | 언급 없음 |
-| **Freshworks** | $1B 매출 목표, AI를 "tailwind"로 봄 | Freshmarketer 구체적 로드맵 없음 |
-
-**결론: 2026년에도 방향 동일** - 모두 AI 상담/서비스에 집중, 마케팅 확장은 핵심 전략 아님
+**결론:** 2024-2026년 내내 **모두 AI 상담/서비스에 집중**, 마케팅 확장은 핵심 전략 아님
 
 ### 새로운 관점: "CS AI → 전사 AI 전환 엔진"
 
@@ -157,7 +149,7 @@ Intercom 2026 리포트에서 발견:
 - **CS에서 AI가 성공** → 그 성공을 기반으로 **회사 전체가 AI 전환**
 - 마케팅 "기능"을 키우는 게 아니라, CS AI 성공이 다른 부서 전환을 **리드**하는 구조
 
-Sources:
+**Sources:**
 - [Intercom Customer Service Transformation Report 2026](https://www.intercom.com/customer-transformation-report)
 - [Zendesk CX Trends 2026](https://cxtrends.zendesk.com)
 
