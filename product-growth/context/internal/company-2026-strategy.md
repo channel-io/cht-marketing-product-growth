@@ -10,7 +10,7 @@
 
 | 항목 | 내용 |
 |------|------|
-| **시장** | 10조 원 BPO 시장 |
+| **시장** | 10조 원 BPO 시장[^1] |
 | **베팅** | AI는 산업혁명 이상의 파도. 상담은 코딩 다음으로 AI가 대체할 시장 |
 | **전략** | AI와 사람의 하이브리드 모델 |
 
@@ -32,6 +32,17 @@ AI가 대체하는 시장의 패턴:
 - 한국, 일본 → **미국** 진출
 - 홈페이지/제품 리디자인 (글로벌향)
 - 회원가입 프로세스 간소화
+
+#### 지역별 전략 차별화
+
+| 지역 | 전략 | 목표 | 시장 규모 |
+|------|------|------|----------|
+| **한국** | AI BPO 턴키 | 매출/수익 | ~10조 원[^1] |
+| **일본** | AI BPO 턴키 | 매출/수익 | ~45조 원[^2] |
+| **미국** | Freemium | 시장 확장 | - |
+
+- **아시아 (한국/일본)**: AI BPO 턴키 서비스로 고수익 창출. 이미 검증된 시장과 고객 기반 활용
+- **미국**: Freemium 전략으로 시장 점유율 확대 우선. tawk.to 모델 참고하여 무료 사용자 확보 후 BPO 전환
 
 ### 2. ALF 중심 성장
 
@@ -153,3 +164,14 @@ SaaS Market (1조 원) → AI로 Service Market 진입 가능 (10x) → BPO Mark
 1. 회사 방향(AI/BPO)과 **충돌하지 않아야** 함
 2. **최소 리소스로 최대 효과**를 낼 수 있어야 함
 3. 가능하면 AI/BPO 전략과 **시너지**가 있으면 설득력 ↑
+
+---
+
+## 각주
+
+[^1]: 한국 BPO 시장 규모 (~10조 원, 2024 기준)
+  - [Statista - South Korea BPO Market](https://www.statista.com/outlook/tmo/it-services/business-process-outsourcing/south-korea)
+  - [Grand View Research - South Korea BPO Market](https://www.grandviewresearch.com/horizon/outlook/business-process-outsourcing-market/south-korea)
+
+[^2]: 일본 BPO 시장 규모 (~45조 원, 2024 기준)
+  - [Statista - Japan BPO Market Size](https://www.statista.com/statistics/1197785/japan-bpo-market-size/)
