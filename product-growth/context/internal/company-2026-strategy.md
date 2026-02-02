@@ -1,6 +1,6 @@
 # 채널톡 2026 전략 방향
 
-> **출처**: 2026년 전사 전략 발표 자료
+> **출처**: [2026년 전사 전략 발표 자료](https://docs.google.com/presentation/d/1G6z4hCmet1yiNweSgp-MhvP6nWXgMhRSlJKkwQ1JU5c/edit)
 >
 > **작성일**: 2026-02-02
 
