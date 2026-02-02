@@ -6,5 +6,6 @@
 
 | 파일 | 내용 |
 |------|------|
-| `position-and-options.md` | 채널톡 CRM 마케팅 현황, 강점/약점, 전략 옵션 |
+| `company-2026-strategy.md` | 채널톡 2026 전사 전략 방향 (글로벌, ALF, Freemium, BPO) |
+| `position-and-options.md` | 채널톡 마케팅 현황, 강점/약점, 전략 옵션 |
 | `builder-integration.md` | 빌더사별 연동 스펙 (카페24, 아임웹 등) |
