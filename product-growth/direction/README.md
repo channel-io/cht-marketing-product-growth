@@ -12,15 +12,16 @@
 
 | 파일 | 내용 | 상태 |
 |------|------|------|
-| `support-marketing-moat.md` | 상담 데이터 → 마케팅 Moat 가설 탐색 (글로벌 리서치, 피벗 전략) | 완료 |
-| `crm-marketing-validation.md` | CRM 마케팅 성장 가능성 검증 (5개 질문 검증 완료) | 완료 |
+| `crm-marketing-moat-research.md` | CRM 마케팅 해자 리서치 (글로벌 사례, 실패 원인) | 완료 |
+| `crm-marketing-validation.md` | CRM 마케팅 성장 가능성 검증 (5개 질문 세부 항목) | 완료 |
+| `team-pivot-strategy.md` | 마케팅 팀 피벗 전략 탐색 | 탐색 중 |
 
 ## 문서 흐름
 
 ```
-support-marketing-moat.md (탐색 완료)
+crm-marketing-moat-research.md (리서치 완료)
     │
-    │  글로벌 리서치 결과, 가설, 피벗 전략(Plan B)
+    │  글로벌 사례, Intercom 피벗 타임라인, 실패 원인
     │
     ▼
 crm-marketing-validation.md (검증 완료)
@@ -29,12 +30,11 @@ crm-marketing-validation.md (검증 완료)
     │  → CRM 마케팅 독자 성장 전략 유효하지 않음
     │
     ▼
-(다음: 피벗 전략 논의)
+team-pivot-strategy.md (탐색 중)
     │
-    │  Option A: AI/BPO 서포트 역할
-    │  Option B: Growth/AI GTM 팀 전환
-    │  Option C: Sales ALF 중심
+    │  피벗 후보: Sales (Pre-sales 상담) 방향 유력
+    │  글로벌 CS툴들도 Sales 확장 중
     │
     ▼
-(의사결정 필요)
+(TODO: 시장 규모 분석, 해자 연결 검증)
 ```

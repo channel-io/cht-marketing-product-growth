@@ -2,7 +2,7 @@
 
 > **역할**: 5개 검증 질문의 상세 내용
 >
-> **메인 문서**: [support-marketing-moat.md](./support-marketing-moat.md) (전체 흐름, 결론, 피벗 전략)
+> **메인 문서**: [crm-marketing-moat-research.md](./crm-marketing-moat-research.md) (전체 흐름, 결론)
 >
 > **상태**: ✅ 검증 완료
 
@@ -18,7 +18,7 @@
 | 4 | 현재 CRM 마케팅 기능의 성과/한계는? | 9.8% 비중, 유일한 역성장 (-12%) | 🔴 |
 | 5 | 고객사가 실제로 원하는 건 뭔가? | 모름 (고객 본인들도 모름) | 🔴 |
 
-→ **최종 결론 및 피벗 전략**: [support-marketing-moat.md](./support-marketing-moat.md) 참조
+→ **최종 결론**: [crm-marketing-moat-research.md](./crm-marketing-moat-research.md) 참조
 
 ---
 
@@ -104,7 +104,7 @@
 
 ### 글로벌 실패의 진짜 이유
 
-> 상세 내용: [support-marketing-moat.md](./support-marketing-moat.md) 섹션 4 참조
+> 상세 내용: [crm-marketing-moat-research.md](./crm-marketing-moat-research.md) 섹션 4 참조
 
 - 원래 추측: 조직 구조 문제 (CS팀 ≠ 마케팅팀)
 - **실제 이유: 집중 부족** (Intercom CEO 인터뷰, 2024.09.05)
