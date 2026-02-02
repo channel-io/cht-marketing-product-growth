@@ -13,3 +13,4 @@
 | 파일 | 내용 | 상태 |
 |------|------|------|
 | `support-marketing-moat.md` | 상담 데이터 → 마케팅 Moat 가설 탐색 | WIP |
+| `crm-marketing-validation.md` | CRM 마케팅 성장 가능성 검증 체크리스트 | WIP |
