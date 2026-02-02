@@ -3,6 +3,8 @@
 > **목적**: "CRM 마케팅으로 성장 가능한 전략이 있는가?" 검증
 >
 > **상태**: 검증 중
+>
+> **선행 문서**: [support-marketing-moat.md](./support-marketing-moat.md) (글로벌 리서치, 가설 수립 완료)
 
 ---
 

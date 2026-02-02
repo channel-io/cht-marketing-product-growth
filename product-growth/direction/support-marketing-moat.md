@@ -1,8 +1,10 @@
 # 상담 데이터 → 마케팅 Moat 가설
 
-> **상태**: 탐색 중 (WIP)
+> **상태**: 탐색 완료
 >
 > **핵심 질문**: 상담 데이터가 마케팅의 Moat가 될 수 있는가?
+>
+> **다음 단계**: [crm-marketing-validation.md](./crm-marketing-validation.md)에서 검증 진행
 
 ---
 
