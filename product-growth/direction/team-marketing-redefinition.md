@@ -74,18 +74,24 @@ CRM 마케팅(이메일/푸시 캠페인 중심 마케팅 자동화)이 채널�
 - Lead qualification → Onboarding → Support → Success → Upsell
 - 전체 고객 여정을 "대화"로 커버
 
-### 글로벌 플레이어 수렴
+### Conversational Sales 방향
 
 | 회사 | 움직임 |
 |------|--------|
-| **Drift** | Salesloft에 인수 (2024) |
-| **Intercom** | Fin을 SDR로 확장. CRM 마케팅(이메일/푸시)은 유지만 하고 신규 개발 없음 |
-| **Zendesk** | Suite + Sell 통합. CRM 마케팅은 명시적으로 안 함 |
-| **Freshworks** | Freshdesk + Freshsales 통합 |
+| **Drift** | Conversational Marketing/Sales 창시 → Salesloft에 인수 (2024) |
+| **Intercom** | Fin을 SDR로 확장. 대화 안에서 리드 자격검증 → 세일즈팀 전달 |
 
-**공통점:** CRM Marketing은 포기/후순위, Conversational Sales로 수렴
+> ⚠️ **주의**: 방향성은 확인되나, 명확한 성공 사례는 아직 없음. Drift는 독자 생존보다 인수를 택했고, Intercom Fin as SDR은 2024년 후반 출시된 신규 기능으로 성과 데이터 미공개.
 
-> ⚠️ **주의**: 방향성 수렴은 확인되나, 명확한 성공 사례는 아직 없음. Drift는 독자 생존보다 인수를 택했고, Intercom Fin as SDR은 2024년 후반 출시된 신규 기능으로 성과 데이터 미공개.
+### CRM 마케팅 포기 사례
+
+| 회사 | 움직임 |
+|------|--------|
+| **Intercom** | CRM 마케팅(이메일/푸시)은 유지만 하고 신규 개발 없음 |
+| **Zendesk** | CRM 마케팅은 명시적으로 안 함. Suite + Sell 데이터 통합에 집중 |
+| **Freshworks** | Freshdesk + Freshsales 데이터 통합에 집중 |
+
+**공통점:** CRM Marketing은 포기/후순위
 
 ---
 
