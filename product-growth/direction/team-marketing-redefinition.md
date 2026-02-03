@@ -82,29 +82,37 @@ CRM 마케팅(이메일/푸시 캠페인 중심 마케팅 자동화)이 채널�
 - Lead qualification → Onboarding → Support → Success → Upsell
 - 전체 고객 여정을 "대화"로 커버
 
-### Conversational 방향: B2B & B2C
+### Rep AI: B2C Conversational Sales
 
-**B2B (리드 자격검증 → 세일즈 전환):**
+> "Conversational commerce is the future of shopping"
 
-| 회사 | 움직임 |
-|------|--------|
-| **Drift** | Conversational Marketing/Sales 창시 → Salesloft에 인수 (2024) |
-| **Intercom** | Fin을 SDR로 확장. 대화 안에서 리드 자격검증 → 세일즈팀 전달 |
+**포지셔닝:**
+- Shopify 전용 AI Sales Concierge
+- 가격: $39/월~ (B2B 대비 저가, 앱스토어 유통)
 
-> ⚠️ **주의**: 방향성은 확인되나, 명확한 성공 사례는 아직 없음. Drift는 독자 생존보다 인수를 택했고, Intercom Fin as SDR은 2024년 후반 출시된 신규 기능으로 성과 데이터 미공개.
+**핵심 기능:**
+- Rescue Algorithm™: 이탈 직전 고객 92% 정확도로 감지 → 대화 유도
+- 자연어 상품 추천, 장바구니 복구, 업셀
 
-**B2C (대화 → 구매 전환):**
+**고객 성과:**
+| 고객사 | 결과 |
+|--------|------|
+| K2 | 전환율 10x, 서포트 티켓 80% 감소 |
+| Snow Teeth Whitening | $200k+ 매출 |
+| Cloth & Paper | AOV +70% |
 
-| 회사 | 포지셔닝 | 결과 |
-|------|----------|------|
-| **Rep AI** | Shopify 전용 AI Sales Concierge ($39/월~) | 전환율 3~10x 증가, AOV +25~70%, ROI 20x |
+**핵심 시사점:**
+- B2C에서도 Conversational Sales SaaS가 **검증됨**
+- B2B와 다른 접근: 저가 + 앱스토어 유통 + SMB 타겟
 
-**Rep AI 주요 고객 성과:**
-- K2: 전환율 10x, 서포트 티켓 80% 감소
-- Snow Teeth Whitening: $200k+ 매출
-- 장바구니 이탈 33% 전환
+### 시장 시그널 요약
 
-> **B2B vs B2C 접근 차이**: B2B(Drift)는 엔터프라이즈 영업 + 고가($30k+/년), B2C(Rep AI)는 앱스토어 유통 + 저가($39/월~). 같은 Conversational Sales지만 시장 접근이 다름.
+| 구분 | B2B | B2C |
+|------|-----|-----|
+| **대표 플레이어** | Drift, Intercom | Rep AI |
+| **가격** | $30k+/년 | $39/월~ |
+| **유통** | 엔터프라이즈 영업 | 앱스토어 |
+| **성공 검증** | ⚠️ 방향성 확인, 성과 미검증 | ⭕ ROI 20x, 다수 케이스 |
 
 ---
 
