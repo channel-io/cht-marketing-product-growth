@@ -82,7 +82,9 @@ CRM 마케팅(이메일/푸시 캠페인 중심 마케팅 자동화)이 채널�
 - Lead qualification → Onboarding → Support → Success → Upsell
 - 전체 고객 여정을 "대화"로 커버
 
-### Conversational Sales 방향
+### Conversational 방향: B2B & B2C
+
+**B2B (리드 자격검증 → 세일즈 전환):**
 
 | 회사 | 움직임 |
 |------|--------|
@@ -90,6 +92,18 @@ CRM 마케팅(이메일/푸시 캠페인 중심 마케팅 자동화)이 채널�
 | **Intercom** | Fin을 SDR로 확장. 대화 안에서 리드 자격검증 → 세일즈팀 전달 |
 
 > ⚠️ **주의**: 방향성은 확인되나, 명확한 성공 사례는 아직 없음. Drift는 독자 생존보다 인수를 택했고, Intercom Fin as SDR은 2024년 후반 출시된 신규 기능으로 성과 데이터 미공개.
+
+**B2C (대화 → 구매 전환):**
+
+| 회사 | 결과 |
+|------|------|
+| **David's Bridal** | AI 챗봇 Zoey로 출시 몇 주 만에 $30,000 드레스 판매 (완전 자동화) |
+| **H&M** | Kik 챗봇으로 15% 매출 증가, 70% 사용자 engagement |
+| **WhatsApp Commerce** | 브랜드 상호작용 후 66%가 구매, 전환율 45-60% |
+
+**B2C 주요 지표:**
+- AI 챗봇 도입 후 전환율 +23%
+- 장바구니 이탈 복구율 25-30%
 
 ---
 
@@ -105,8 +119,10 @@ Conversational:
 방문자 → 실시간 대화 → 의도 파악 → 즉시 전환 (같은 세션)
 ```
 
-- **Conversational Marketing**: 방문자 → 실시간 대화 → 리드 생성/육성
-- **Conversational Sales**: 리드 자격검증 → 세일즈팀 핸드오프 → 계약 전환
+| 구분 | B2B | B2C |
+|------|-----|-----|
+| **Conversational Marketing** | 방문자 대화 → 리드 생성/육성 | 방문자 대화 → 상품 추천/관심 유도 |
+| **Conversational Sales** | 리드 자격검증 → 세일즈팀 핸드오프 | 대화 내 구매 전환, 장바구니 이탈 복구 |
 
 ### CRM 마케팅과의 핵심 차이
 
@@ -125,23 +141,6 @@ Conversational:
 | Form 작성 | 대화로 정보 수집 |
 | Nurture 캠페인 | Real-time Qualify |
 | Lead 관리 | 의도 순간 포착 + 즉시 전환 |
-
-### B2C 적용 가능성
-
-본 문서의 사례(Drift, Intercom)는 B2B 중심이나, B2C 이커머스에서도 검증된 사례 존재:
-
-| 브랜드 | 결과 |
-|--------|------|
-| **David's Bridal** | AI 챗봇 Zoey로 출시 몇 주 만에 $30,000 드레스 판매 (완전 자동화) |
-| **H&M** | Kik 챗봇으로 15% 매출 증가, 70% 사용자 engagement |
-| **WhatsApp Commerce** | 브랜드 상호작용 후 66%가 구매, 전환율 45-60% |
-
-**B2C 주요 지표:**
-- AI 챗봇 도입 후 전환율 +23%
-- 장바구니 이탈 복구율 25-30%
-- 결제 전환율 +15-35%
-
-→ Conversational은 B2B SDR뿐 아니라 **B2C 이커머스에서도 검증된 방향**
 
 ---
 
