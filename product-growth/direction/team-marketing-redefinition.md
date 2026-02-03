@@ -184,6 +184,8 @@ Conversational:
 
 ## 5. 시장 규모 & 확장 방향
 
+> ⚠️ **데이터 한계**: Conversational Marketing/Sales는 별도 시장 카테고리로 분리되지 않아, 상위 시장(Conversational AI, Conversational Commerce) 데이터를 참고함. 방향성 판단 용도로 활용.
+
 ### Conversational AI 시장
 
 | 출처 | 2024 | 2030~2032 | CAGR |
