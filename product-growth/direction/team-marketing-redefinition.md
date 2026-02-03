@@ -15,8 +15,8 @@
 | 회사 | 움직임 |
 |------|--------|
 | **Drift** | Salesloft에 인수 (2024) - Revenue Orchestration으로 통합 |
-| **Intercom** | Fin을 SDR로 확장, CRM 마케팅은 유지만 |
-| **Zendesk** | Suite + Sell 통합, 마케팅 명시적으로 안 함 |
+| **Intercom** | Fin을 SDR로 확장. CRM 마케팅(이메일/푸시)은 유지만, 신규 개발 없음 |
+| **Zendesk** | Suite + Sell 통합. CRM 마케팅은 명시적으로 안 함 |
 
 **시장 규모:** Conversational Commerce $14.9B → $63.4B (CAGR 15.6%)
 

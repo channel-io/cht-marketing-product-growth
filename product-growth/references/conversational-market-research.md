@@ -23,7 +23,7 @@
 
 **핵심 시사점:**
 - Conversational이 GTM(Go-to-Market)의 핵심 레이어로 인정받은 신호
-- 단순 마케팅 도구가 아니라 **Revenue 인프라**로 포지셔닝
+- 단순 리드 수집 도구가 아니라 **Revenue 인프라**로 포지셔닝
 
 ### Intercom: Fin as SDR 확장
 
@@ -44,8 +44,8 @@
 | 회사 | 움직임 |
 |------|--------|
 | **Drift** | Salesloft에 인수 (2024) |
-| **Intercom** | Fin을 SDR로 확장, 마케팅 기능은 유지만 |
-| **Zendesk** | Suite + Sell 통합, 마케팅 명시적으로 안 함 |
+| **Intercom** | Fin을 SDR로 확장. CRM 마케팅(이메일/푸시)은 유지만 하고 신규 개발 없음 |
+| **Zendesk** | Suite + Sell 통합. CRM 마케팅은 명시적으로 안 함 |
 | **Freshworks** | Freshdesk + Freshsales 통합 |
 
 **공통점:** CRM Marketing은 포기/후순위, Conversational Sales로 수렴
