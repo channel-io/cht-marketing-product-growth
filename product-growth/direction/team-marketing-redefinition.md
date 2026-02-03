@@ -122,13 +122,6 @@ Conversational:
 | Nurture 캠페인 | Real-time Qualify |
 | Lead 관리 | 의도 순간 포착 + 즉시 전환 |
 
-### 핵심
-
-> "CRM은 고객을 '아는 방법'이고, Conversational은 고객과 '돈을 버는 방법'이다"
-
-- CRM: 인프라/백엔드 (고객 상태, 히스토리, 규칙)
-- Conversational: 전면 제품 (실제 전환이 일어나는 곳)
-
 ---
 
 ## 3. CRM 마케팅 서비스들이 후발주자인 이유
