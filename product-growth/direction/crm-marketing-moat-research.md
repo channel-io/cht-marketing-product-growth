@@ -259,6 +259,6 @@ Intercom 2026 리포트에서 발견:
 - **내부 데이터**: 9.8% 비중, 유일한 역성장 피처
 - **방향 전환 정당성**: CRM 마케팅 독자 성장은 기회비용 대비 정당화 어려움
 
-### 피벗 전략 탐색
+### 마케팅 재정의
 
-> 상세 내용: [team-pivot-strategy.md](./team-pivot-strategy.md)
+> 상세 내용: [team-marketing-redefinition.md](./team-marketing-redefinition.md)

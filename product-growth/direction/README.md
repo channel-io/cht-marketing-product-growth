@@ -14,7 +14,7 @@
 |------|------|------|
 | `crm-marketing-moat-research.md` | CRM 마케팅 해자 리서치 (글로벌 사례, 실패 원인) | 완료 |
 | `crm-marketing-validation.md` | CRM 마케팅 성장 가능성 검증 (5개 질문 세부 항목) | 완료 |
-| `team-pivot-strategy.md` | 마케팅 팀 피벗 전략 탐색 | 탐색 중 |
+| `team-marketing-redefinition.md` | 마케팅 팀 방향성 재정의 | 탐색 중 |
 
 ## 문서 흐름
 
@@ -30,11 +30,12 @@ crm-marketing-validation.md (검증 완료)
     │  → CRM 마케팅 독자 성장 전략 유효하지 않음
     │
     ▼
-team-pivot-strategy.md (탐색 중)
+team-marketing-redefinition.md (탐색 중)
     │
-    │  피벗 후보: Sales (Pre-sales 상담) 방향 유력
-    │  글로벌 CS툴들도 Sales 확장 중
+    │  핵심: 피벗이 아닌 마케팅의 재정의
+    │  CRM Marketing → Conversational Marketing + Sales
+    │  상담 해자 위에서 작동하는 마케팅
     │
     ▼
-(TODO: 시장 규모 분석, 해자 연결 검증)
+(TODO: Sales ALF 해자 연결 검토, 로드맵 구체화)
 ```
