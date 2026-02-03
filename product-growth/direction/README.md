@@ -8,7 +8,7 @@
 
 | 파일 | 내용 | 상태 |
 |------|------|------|
-| `team-marketing-redefinition.md` | 마케팅 팀 방향성 재정의 | 탐색 중 |
+| `team-marketing-redefinition.md` | 마케팅 팀 방향성: Conversational Marketing + Sales | 탐색 중 |
 
 ## 관련 문서
 
