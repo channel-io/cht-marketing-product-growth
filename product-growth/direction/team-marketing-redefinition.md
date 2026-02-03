@@ -173,7 +173,7 @@ Conversational:
 
 ---
 
-## 3. CRM 마케팅 서비스들이 후발주자인 이유
+## 3. 기존 CRM 마케팅 서비스들이 Conversational Marketing에서 후발주자인 이유
 
 ### 구조적 한계
 
