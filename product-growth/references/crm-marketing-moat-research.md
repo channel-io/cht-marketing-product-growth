@@ -19,7 +19,7 @@
 - 성공: 부가 기능이 핵심의 Moat를 **강화**함 (데이터 축적 → 전환 비용 ↑)
 - 실패: 부가 기능이 핵심과 **따로 놀음** (그냥 붙여놓은 것)
 
-→ 상세 내용: [addon-growth-patterns.md](../references/addon-growth-patterns.md)
+→ 상세 내용: [addon-growth-patterns.md](./addon-growth-patterns.md)
 
 ### 채널톡 맥락에서의 질문
 
@@ -261,4 +261,4 @@ Intercom 2026 리포트에서 발견:
 
 ### 마케팅 재정의
 
-> 상세 내용: [team-marketing-redefinition.md](./team-marketing-redefinition.md)
+> 상세 내용: [team-marketing-redefinition.md](../direction/team-marketing-redefinition.md)

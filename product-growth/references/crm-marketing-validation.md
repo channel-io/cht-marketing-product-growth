@@ -55,8 +55,8 @@
 | 출처 | 내용 |
 |------|------|
 | [salesforce-meeting/summary.md](../context/customer/salesforce-meeting/summary.md) | CS-마케팅 연결 고리 섹션 |
-| [addon-growth-patterns.md](../references/addon-growth-patterns.md) | 글로벌 성공/실패 패턴 |
-| [support-marketing-moat.md](./support-marketing-moat.md) | 글로벌 CS툴 방향성 |
+| [addon-growth-patterns.md](./addon-growth-patterns.md) | 글로벌 성공/실패 패턴 |
+| [crm-marketing-moat-research.md](./crm-marketing-moat-research.md) | 글로벌 CS툴 방향성 |
 
 ### VOC에서 발견된 연결 니즈
 
