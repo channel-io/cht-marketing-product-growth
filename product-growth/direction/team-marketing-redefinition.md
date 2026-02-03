@@ -12,7 +12,7 @@
 
 | 문서 | 결론 |
 |------|------|
-| [CRM 마케팅 검증](../references/crm-marketing-moat-research.md) | CRM 마케팅은 상담 해자와 연결 안 됨 → 독자 성장 불가 |
+| [CRM 마케팅 검증](../context/market/crm-marketing-moat-research.md) | CRM 마케팅은 상담 해자와 연결 안 됨 → 독자 성장 불가 |
 | [Conversational 시장 리서치](../references/conversational-market-research.md) | Conversational Marketing/Sales는 상담 해자 위에서 작동 |
 
 ### 핵심 구분

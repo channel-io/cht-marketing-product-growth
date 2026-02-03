@@ -28,7 +28,7 @@
 
 | 출처 | 내용 |
 |------|------|
-| [salesforce-meeting/summary.md](../context/customer/salesforce-meeting/summary.md) | 고객 미팅 3,676건 분석 |
+| [salesforce-meeting/summary.md](../customer/salesforce-meeting/summary.md) | 고객 미팅 3,676건 분석 |
 
 ### 발견된 페인포인트
 
@@ -54,7 +54,7 @@
 
 | 출처 | 내용 |
 |------|------|
-| [salesforce-meeting/summary.md](../context/customer/salesforce-meeting/summary.md) | CS-마케팅 연결 고리 섹션 |
+| [salesforce-meeting/summary.md](../customer/salesforce-meeting/summary.md) | CS-마케팅 연결 고리 섹션 |
 | [addon-growth-patterns.md](./addon-growth-patterns.md) | 글로벌 성공/실패 패턴 |
 | [crm-marketing-moat-research.md](./crm-marketing-moat-research.md) | 글로벌 CS툴 방향성 |
 
@@ -158,7 +158,7 @@
 
 | 출처 | 내용 |
 |------|------|
-| [salesforce-meeting/summary.md](../context/customer/salesforce-meeting/summary.md) | 신규 고객 기대치 분석 |
+| [salesforce-meeting/summary.md](../customer/salesforce-meeting/summary.md) | 신규 고객 기대치 분석 |
 
 ### 신규 고객의 관심사 (1stOpp)
 

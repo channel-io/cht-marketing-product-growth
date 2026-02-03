@@ -261,4 +261,4 @@ Intercom 2026 리포트에서 발견:
 
 ### 마케팅 재정의
 
-> 상세 내용: [team-marketing-redefinition.md](../direction/team-marketing-redefinition.md)
+> 상세 내용: [team-marketing-redefinition.md](../../direction/team-marketing-redefinition.md)
