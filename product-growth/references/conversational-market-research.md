@@ -157,40 +157,40 @@ Conversational:
 
 ### Conversational Commerce 시장
 
-| 지표 | 수치 |
-|------|------|
-| 2024 | $14.9B |
-| 2034 | $63.4B |
-| CAGR | 15.6% |
+| 지표 | 수치 | 출처 |
+|------|------|------|
+| 2024 | $14.9B | [^1] |
+| 2034 | $63.4B | [^1] |
+| CAGR | 15.6% | [^1] |
 
-**세그먼트별:**
+**세그먼트별:** [^2]
 - Chatbot: 64% 점유율 (2024)
 - Retail & E-commerce: 41% 점유율
 - Healthcare: 가장 빠른 성장 (19.8% CAGR)
 
-**지역별:**
+**지역별:** [^1]
 - North America: 39.5% ($5.87B)
 - Asia Pacific: 17% CAGR (가장 빠른 성장)
 
 ### B2C/Retail 확장 가능성
 
-| 지표 | 수치 |
-|------|------|
-| 글로벌 B2C E-commerce | $5.2T (2024) → $9.8T (2033) |
-| Conversational AI 처리 비중 | 2025년까지 고객 인터랙션 80% |
-| 전환율 증가 | 챗봇 도입 시 23% ↑ |
-| 장바구니 이탈 복구 | 실시간 대화로 35% 복구 |
-| 고객 서비스 비용 절감 | 30% |
+| 지표 | 수치 | 출처 |
+|------|------|------|
+| 글로벌 B2C E-commerce | $5.2T (2024) → $9.8T (2033) | [^3] |
+| Conversational AI 처리 비중 | 2025년까지 고객 인터랙션 80% | [^4] |
+| 전환율 증가 | 챗봇 도입 시 23% ↑ | [^2] |
+| 장바구니 이탈 복구 | 실시간 대화로 35% 복구 | [^2] |
+| 고객 서비스 비용 절감 | 30% | [^2] |
 
-**97%의 리테일러가 내년 AI 투자 증가 계획** (NVIDIA)
+**97%의 리테일러가 내년 AI 투자 증가 계획** [^4]
 
 ### 확장 방향
 
-| 단계 | 영역 | 설명 |
+| 단계 | 영역 | 근거 |
 |------|------|------|
 | 현재 | B2B SaaS | 채널톡 기존 고객 |
-| 확장 1 | B2C Retail/E-commerce | 시장 41% 점유, 가장 큰 세그먼트 |
-| 확장 2 | Healthcare | 가장 빠른 성장 (19.8% CAGR) |
+| 확장 1 | B2C Retail/E-commerce | 시장 41% 점유, 가장 큰 세그먼트 [^2] |
+| 확장 2 | Healthcare | 가장 빠른 성장 (19.8% CAGR) [^2] |
 | 확장 3 | Financial Services | 높은 규제, 높은 가치 |
 
 ---
@@ -200,8 +200,8 @@ Conversational:
 ### 시장 검증
 
 1. **글로벌 플레이어 수렴**: Drift 인수, Intercom 확장, Zendesk/Freshworks 통합
-2. **시장 규모**: $14.9B → $63.4B (CAGR 15.6%)
-3. **ROI 검증**: 370% (3년), 전환율 23% ↑, 비용 30% ↓
+2. **시장 규모**: $14.9B → $63.4B (CAGR 15.6%) [^1]
+3. **ROI 검증**: 370% (3년) [^5], 전환율 23% ↑, 비용 30% ↓ [^2]
 
 ### 채널톡 적합성
 
@@ -218,16 +218,20 @@ Conversational:
 
 ## Sources
 
+### 각주
+
+[^1]: [Conversational Commerce Market Size | Market.us](https://market.us/report/global-conversational-commerce-market/)
+[^2]: [Conversational Commerce Statistics 2025-2030 | Experro](https://www.experro.com/blog/conversational-commerce-statistics-and-market-size/)
+[^3]: [Conversational Commerce Market Forecast 2025-2035 | Future Market Insights](https://www.futuremarketinsights.com/reports/conversational-commerce-market)
+[^4]: [The Future of AI In Ecommerce | HelloRep](https://www.hellorep.ai/blog/the-future-of-ai-in-ecommerce-40-statistics-on-conversational-ai-agents-for-2025) (NVIDIA 데이터 인용)
+[^5]: [Conversational Marketing Statistics | Qualified](https://www.qualified.com/plus/articles/40-conversational-marketing-stats-you-need-to-know) (Forrester 연구 인용)
+
+### 추가 참고 자료
+
 **Drift 인수:**
 - [Salesloft Acquires Drift](https://www.salesloft.com/company/newsroom/salesloft-acquires-drift)
 - [What Salesloft's Acquisition Of Drift Means | Forrester](https://www.forrester.com/blogs/what-saleslofts-acquisition-of-drift-means/)
 - [Salesloft acquires Drift to bridge Sales, Marketing, and buyer journey | Diginomica](https://diginomica.com/salesloft-acquires-drift-bridge-disconnect-between-sales-marketing-and-buyer-journey)
 
-**시장 규모:**
-- [Conversational Commerce Market Size | Market.us](https://market.us/report/global-conversational-commerce-market/)
-- [Conversational Commerce Market Forecast 2025-2035 | Future Market Insights](https://www.futuremarketinsights.com/reports/conversational-commerce-market)
-- [Conversational Commerce Statistics 2025-2030 | Experro](https://www.experro.com/blog/conversational-commerce-statistics-and-market-size/)
-
 **글로벌 동향:**
 - [Train Fin as a Sales Development Rep | Intercom](https://www.intercom.com/help/en/articles/12521150-train-fin-as-a-sales-development-rep-sdr)
-- [The Future of AI In Ecommerce | HelloRep](https://www.hellorep.ai/blog/the-future-of-ai-in-ecommerce-40-statistics-on-conversational-ai-agents-for-2025)
