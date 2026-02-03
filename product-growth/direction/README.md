@@ -9,6 +9,7 @@
 | 파일 | 내용 |
 |------|------|
 | `team-marketing-redefinition.md` | 마케팅 팀 방향성: Conversational Marketing + Sales |
+| `conversational-target-decision.md` | Conversational 타겟 선택 기준 (B2B vs B2C) |
 
 ## 관련 문서
 
