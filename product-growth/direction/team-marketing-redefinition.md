@@ -118,6 +118,26 @@ CRM 마케팅(이메일/푸시 캠페인 중심 마케팅 자동화)이 채널�
 
 ## 2. Conversational Marketing/Sales란?
 
+### 용어 위계
+
+```
+Conversational AI (기술 - 가장 넓음)
+├── Customer Service (CS 챗봇, 가상 비서)
+├── Conversational Commerce (상거래 적용)
+│   ├── Conversational Marketing (리드 생성/육성)
+│   └── Conversational Sales (전환/계약)
+└── 기타 (HR 봇, IT 서포트 등)
+```
+
+| 용어 | 정의 | 범위 |
+|------|------|------|
+| **Conversational AI** | 대화가 가능한 AI 기술 전체 | 가장 넓음 |
+| **Conversational Commerce** | 대화를 통한 상거래 | AI의 하위 |
+| **Conversational Marketing** | 대화를 통한 리드 생성/육성 | Commerce의 하위 |
+| **Conversational Sales** | 대화를 통한 전환/계약 | Commerce의 하위 |
+
+> 본 문서의 집중 영역: **Conversational Marketing + Sales**
+
 ### 개념 정의
 
 ```
