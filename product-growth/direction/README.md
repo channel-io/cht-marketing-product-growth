@@ -6,9 +6,9 @@
 
 ## 파일
 
-| 파일 | 내용 | 상태 |
-|------|------|------|
-| `team-marketing-redefinition.md` | 마케팅 팀 방향성: Conversational Marketing + Sales | 탐색 중 |
+| 파일 | 내용 |
+|------|------|
+| `team-marketing-redefinition.md` | 마케팅 팀 방향성: Conversational Marketing + Sales |
 
 ## 관련 문서
 

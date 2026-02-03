@@ -1,7 +1,5 @@
 # 마케팅 팀 방향성: Conversational Marketing + Sales
 
-> **상태**: 탐색 중
->
 > **제안**: CRM 마케팅이 아닌 Conversational Marketing + Sales에 집중
 
 ### 용어 정의
