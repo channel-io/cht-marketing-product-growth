@@ -155,42 +155,43 @@ Conversational:
 
 ## 5. 시장 규모 & 확장 방향
 
+### Conversational AI 시장
+
+| 출처 | 2024 | 2030~2032 | CAGR |
+|------|------|-----------|------|
+| **Gartner** [^1] | $8.2B (2023) | $36B (2032) | - |
+| **Grand View Research** [^2] | $11.58B | $41.39B (2030) | 23.7% |
+| **Precedence Research** [^3] | $15.5B | $132.86B (2034) | - |
+
 ### Conversational Commerce 시장
 
 | 지표 | 수치 | 출처 |
 |------|------|------|
-| 2024 | $14.9B | [^1] |
-| 2034 | $63.4B | [^1] |
-| CAGR | 15.6% | [^1] |
+| 2024 | $11.04B | [^4] |
+| 2025 | $13B | [^4] |
+| CAGR | 17.7% | [^4] |
 
 **세그먼트별:** [^2]
-- Chatbot: 64% 점유율 (2024)
-- Retail & E-commerce: 41% 점유율
-- Healthcare: 가장 빠른 성장 (19.8% CAGR)
+- Retail & E-commerce: 시장 리더 (2024 기준 가장 큰 점유율)
+- Solution 부문: 61.1% 점유율
+- North America: 26.1% 점유율
 
-**지역별:** [^1]
-- North America: 39.5% ($5.87B)
-- Asia Pacific: 17% CAGR (가장 빠른 성장)
-
-### B2C/Retail 확장 가능성
+### 기업 AI 도입 현황
 
 | 지표 | 수치 | 출처 |
 |------|------|------|
-| 글로벌 B2C E-commerce | $5.2T (2024) → $9.8T (2033) | [^3] |
-| Conversational AI 처리 비중 | 2025년까지 고객 인터랙션 80% | [^4] |
-| 전환율 증가 | 챗봇 도입 시 23% ↑ | [^2] |
-| 장바구니 이탈 복구 | 실시간 대화로 35% 복구 | [^2] |
-| 고객 서비스 비용 절감 | 30% | [^2] |
-
-**97%의 리테일러가 내년 AI 투자 증가 계획** [^4]
+| AI 도입 기업 | 78% (1개 이상 핵심 운영에 통합) | [^5] |
+| Generative AI 정기 사용 | 65% | [^5] |
+| AI 투자 ROI | $1당 $3.50 (최대 8x) | [^5] |
+| Contact Center AI 처리 비중 | 3% (2023) → 14% (2027) | [^1] |
 
 ### 확장 방향
 
 | 단계 | 영역 | 근거 |
 |------|------|------|
 | 현재 | B2B SaaS | 채널톡 기존 고객 |
-| 확장 1 | B2C Retail/E-commerce | 시장 41% 점유, 가장 큰 세그먼트 [^2] |
-| 확장 2 | Healthcare | 가장 빠른 성장 (19.8% CAGR) [^2] |
+| 확장 1 | B2C Retail/E-commerce | 시장 리더, 가장 큰 세그먼트 [^2] |
+| 확장 2 | Healthcare | Tech/Media/Telecom과 함께 AI 도입 선도 [^5] |
 | 확장 3 | Financial Services | 높은 규제, 높은 가치 |
 
 ---
@@ -200,8 +201,8 @@ Conversational:
 ### 시장 검증
 
 1. **글로벌 플레이어 수렴**: Drift 인수, Intercom 확장, Zendesk/Freshworks 통합
-2. **시장 규모**: $14.9B → $63.4B (CAGR 15.6%) [^1]
-3. **ROI 검증**: 370% (3년) [^5], 전환율 23% ↑, 비용 30% ↓ [^2]
+2. **시장 규모**: Conversational AI $11.58B → $41.39B (CAGR 23.7%) [^2]
+3. **기업 도입**: 78%가 AI 통합, ROI $1당 $3.50 [^5]
 
 ### 채널톡 적합성
 
@@ -218,13 +219,13 @@ Conversational:
 
 ## Sources
 
-### 각주
+### 각주 (1차 티어 리서치)
 
-[^1]: [Conversational Commerce Market Size | Market.us](https://market.us/report/global-conversational-commerce-market/)
-[^2]: [Conversational Commerce Statistics 2025-2030 | Experro](https://www.experro.com/blog/conversational-commerce-statistics-and-market-size/)
-[^3]: [Conversational Commerce Market Forecast 2025-2035 | Future Market Insights](https://www.futuremarketinsights.com/reports/conversational-commerce-market)
-[^4]: [The Future of AI In Ecommerce | HelloRep](https://www.hellorep.ai/blog/the-future-of-ai-in-ecommerce-40-statistics-on-conversational-ai-agents-for-2025) (NVIDIA 데이터 인용)
-[^5]: [Conversational Marketing Statistics | Qualified](https://www.qualified.com/plus/articles/40-conversational-marketing-stats-you-need-to-know) (Forrester 연구 인용)
+[^1]: [Gartner - Market Guide for Conversational AI Solutions](https://www.gartner.com/en/documents/5332563) - Conversational AI 시장 $8.2B (2023) → $36B (2032), Contact Center AI 예측
+[^2]: [Grand View Research - Conversational AI Market Report](https://www.grandviewresearch.com/industry-analysis/conversational-ai-market-report) - $11.58B (2024) → $41.39B (2030), CAGR 23.7%
+[^3]: [Precedence Research - Conversational AI Market](https://www.precedenceresearch.com/conversational-ai-market) - $15.5B (2024) → $132.86B (2034)
+[^4]: [Research and Markets - Conversational Commerce Market Report](https://www.researchandmarkets.com/reports/5948737/conversational-commerce-market-report) - $11.04B (2024) → $13B (2025), CAGR 17.7%
+[^5]: [McKinsey - The State of AI 2024](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai) - 78% 기업 AI 도입, ROI $1당 $3.50
 
 ### 추가 참고 자료
 
@@ -235,3 +236,4 @@ Conversational:
 
 **글로벌 동향:**
 - [Train Fin as a Sales Development Rep | Intercom](https://www.intercom.com/help/en/articles/12521150-train-fin-as-a-sales-development-rep-sdr)
+- [Gartner - Contact Center Market Growth](https://www.gartner.com/en/newsroom/press-releases/2023-07-31-gartner-says-conversational-ai-capabilities-will-help-drive-worldwide-contact-center-market-to-16-percent-growth-in-2023)
