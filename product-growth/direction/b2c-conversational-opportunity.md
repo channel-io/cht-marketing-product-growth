@@ -8,10 +8,26 @@
 
 ### B2B vs B2C Conversational 시장
 
-| 시장 | 대표 플레이어 | 검증 수준 |
-|------|-------------|----------|
-| **B2B** | Drift ($1B+), Qualified ($95M 펀딩) | ✅ 검증됨 |
-| **B2C** | Rep AI (500개, $8.2M) | △ 초기 |
+| 시장 | 대표 플레이어 | 규모 | 성장률 |
+|------|-------------|------|--------|
+| **B2B** | Drift | $1B+ 밸류, 50,000 고객 | 70% ARR 성장, $6M→$47M (2년) |
+| **B2B** | Qualified | $376M+ 밸류 | **800% 매출 성장** |
+| **B2C** | Rep AI | $8.2M 펀딩, 500 고객 | 월 15% (연 ~5배) |
+
+> **출처**
+> - Drift: [TechCrunch - Vista Equity takes majority stake](https://techcrunch.com/2021/09/01/vista-equity-takes-majority-stake-in-saas-startup-drift-taking-it-to-unicorn-status/)
+> - Qualified: [Qualified Series B - 800% Revenue Growth](https://www.prnewswire.com/news-releases/qualifiedcom-raises-51-million-series-b-after-record-year-of-800-revenue-growth-301299036.html)
+> - Rep AI: [Rep AI $8.2M Funding Announcement](https://www.hellorep.ai/blog/rep-ai-announces-8-2-million-in-funding-to-accelerate-development-of-worlds-first-ai-sales-concierge)
+
+### 성장률 비교 (출시 후 ~2년 기준)
+
+| 회사 | 성장률 | 비고 |
+|------|--------|------|
+| Drift | **8배** ($6M→$47M) | B2B |
+| Qualified | **800%** | B2B |
+| Rep AI | **~5배** (연간) | B2C, 아직 초기 |
+
+→ B2B가 더 빠르지만, **압도적 차이는 아님**
 
 ### Rep AI 성장 속도
 
