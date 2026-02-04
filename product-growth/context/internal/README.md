@@ -11,3 +11,4 @@
 | `marketing-data-analysis.md` | 마케팅 그로스 전략 수립을 위한 내부 데이터 분석 |
 | `builder-integration.md` | 빌더사별 연동 스펙 (카페24, 아임웹 등) |
 | `sales-2026-midmarket-strategy.md` | 2026 미드마켓 세일즈 전략 (세그먼트 정의, 버티컬별 KPI) |
+| `market-2026-definition.md` | 2026 시장 정의 (TAM/SAM/SOM, B2B vs B2C 고객 구성) |
