@@ -26,15 +26,17 @@
 | 주요 투자자 | Goldman Sachs, Bain Capital, Sixth Street |
 | 단계 | Series F |
 
-### 매출
+### 매출 & 성장률
 
-| 시점 | ARR/매출 |
-|------|---------|
-| 2021 | $100M ARR 돌파 |
-| 2022 | $150M ARR |
-| 2024 | **$219.5M** |
+| 시점 | ARR/매출 | YoY 성장률 |
+|------|---------|-----------|
+| 2021 | $100M ARR | - |
+| 2022 | $150M ARR | **50%** |
+| 2024 | $219.5M | ~20-25%/년 |
 
-> **출처**: [GetLatka - Bloomreach](https://getlatka.com/companies/bloomreach), [Bloomreach Funding](https://www.bloomreach.com/en/blog/with-usd175-million-in-funding-bloomreach-is-authoring-the-next-chapter-of-e-commerce)
+→ 2024년 Inc. 5000 (미국 가장 빠르게 성장하는 비상장 기업) 선정
+
+> **출처**: [GetLatka - Bloomreach](https://getlatka.com/companies/bloomreach), [Axios - Bloomreach crosses $200M](https://www.axios.com/pro/retail-deals/2024/11/22/bloomreach-revenue-growth-search-ecommerce-shopping), [Inc. 5000 선정](https://www.bloomreach.com/en/news/2024/bloomreach-named-to-inc-5000/)
 
 ---
 
@@ -179,37 +181,6 @@ Mid-Market ─────── Rep AI
                         │
 SMB ─────────────── Rep AI
 ```
-
----
-
-## 채널톡 관점 시사점
-
-### Bloomreach에서 배울 점
-
-| 항목 | 내용 |
-|------|------|
-| 옴니채널 | 웹 → 이메일/SMS 연결 |
-| CDP 연동 | 고객 데이터 기반 개인화 |
-| 엔터프라이즈 성공 | TFG 35% 전환율 향상 |
-
-### 채널톡 vs Bloomreach
-
-| 항목 | Bloomreach | 채널톡 |
-|------|------------|--------|
-| 타겟 | Enterprise | SMB~Mid |
-| 한국 시장 | ❌ 약함 | ⭕ 강함 |
-| 가격 | $50K+/년 | 낮음 |
-| 기존 고객 | 없음 | 9,222개 |
-
-### 기회
-
-| 관점 | 내용 |
-|------|------|
-| 세그먼트 | Bloomreach가 못 먹는 **SMB~Mid** |
-| 지역 | Bloomreach가 약한 **한국** |
-| 가격 | 저렴한 가격으로 **접근성** |
-
-→ **Bloomreach는 엔터프라이즈, 채널톡은 SMB~Mid에서 기회**
 
 ---
 
