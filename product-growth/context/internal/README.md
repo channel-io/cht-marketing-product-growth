@@ -10,3 +10,4 @@
 | `position-and-options.md` | 채널톡 마케팅 현황, 강점/약점, 전략 옵션 |
 | `marketing-data-analysis.md` | 마케팅 그로스 전략 수립을 위한 내부 데이터 분석 |
 | `builder-integration.md` | 빌더사별 연동 스펙 (카페24, 아임웹 등) |
+| `sales-segment-definition.md` | 세일즈 타겟 세그먼트 정의 (SMB/Mid-Market/Enterprise, 버티컬별 전략) |
