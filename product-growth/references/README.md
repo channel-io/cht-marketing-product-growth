@@ -15,5 +15,6 @@
 | 파일 | 내용 | 상태 |
 |------|------|------|
 | `addon-growth-patterns.md` | 핵심→부가 기능 확장 전략 패턴 (9개 사례 분석) | 완료 |
+| `crema-crm-research.md` | 크리마 CRM 상품 출시 배경, 타겟 시장, 차별점 분석 | 완료 |
 
 > Conversational 시장 리서치는 [team-marketing-redefinition.md](../direction/team-marketing-redefinition.md)에 통합됨
