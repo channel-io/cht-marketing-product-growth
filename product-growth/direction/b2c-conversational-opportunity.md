@@ -13,11 +13,13 @@
 | **B2B** | Drift | $1B+ 밸류, 50,000 고객 | 70% ARR 성장, $6M→$47M (2년) |
 | **B2B** | Qualified | $376M+ 밸류 | **800% 매출 성장** |
 | **B2C** | Rep AI | $8.2M 펀딩, 500 고객 | 월 15% (연 ~5배) |
+| **B2C** | Bloomreach Clarity | $2.2B 밸류, 1,400+ 고객 | 50% (2022), 20-25%/년 |
 
 > **출처**
 > - Drift: [TechCrunch - Vista Equity takes majority stake](https://techcrunch.com/2021/09/01/vista-equity-takes-majority-stake-in-saas-startup-drift-taking-it-to-unicorn-status/)
 > - Qualified: [Qualified Series B - 800% Revenue Growth](https://www.prnewswire.com/news-releases/qualifiedcom-raises-51-million-series-b-after-record-year-of-800-revenue-growth-301299036.html)
 > - Rep AI: [Rep AI $8.2M Funding Announcement](https://www.hellorep.ai/blog/rep-ai-announces-8-2-million-in-funding-to-accelerate-development-of-worlds-first-ai-sales-concierge)
+> - Bloomreach: [GetLatka](https://getlatka.com/companies/bloomreach), [Axios](https://www.axios.com/pro/retail-deals/2024/11/22/bloomreach-revenue-growth-search-ecommerce-shopping)
 
 ### 성장률 비교 (출시 후 ~2년 기준)
 
@@ -42,12 +44,13 @@
 
 ### 시장 사이즈 비교
 
-| 시장 | 검증된 규모 |
-|------|------------|
-| B2B (Drift) | 50,000 고객 |
-| B2C (Rep AI) | 500 고객 |
+| 시장 | 플레이어 | 검증된 규모 |
+|------|----------|------------|
+| B2B | Drift | 50,000 고객 |
+| B2C (SMB~Mid) | Rep AI | 500 고객 |
+| B2C (Enterprise) | Bloomreach | 1,400+ 고객 |
 
-→ B2B가 100배 크지만, **Rep AI는 아직 초기**
+→ B2B가 더 크지만, B2C도 세그먼트별로 플레이어 존재
 
 ---
 
@@ -140,10 +143,28 @@ Rep AI (500개)보다 큰 규모
 
 ## 결론
 
+### 시장 검증
+
 | 질문 | 답 |
 |------|---|
-| B2C Conversational 시장 있나? | ⭕ Rep AI가 증명 중 (초기) |
-| 채널톡이 유리한가? | ⭕ 모수 13배, 한국 시장 접근성 |
-| 뭘 해야 하나? | Proactive + 대화형 추천 + 채팅 내 구매 |
+| B2C Conversational 시장 있나? | ⭕ Rep AI (SMB~Mid), Bloomreach (Enterprise)가 증명 |
+| 시장이 성장하나? | ⭕ Rep AI 연 5배, Bloomreach 20-25%/년 |
+| B2B만큼 큰가? | ❓ 아직 불확실 (Drift 50,000 vs Rep AI 500) |
 
-→ **B2C로 가면 이미 보유한 고객 자산을 활용할 수 있음**
+### 채널톡 승산
+
+| 우위 | 내용 |
+|------|------|
+| 고객 모수 | B2C 고객 6,600개 보유 (Rep AI의 13배) |
+| 시장 접근성 | 한국 시장 (Cafe24, 아임웹) |
+| GTM | 기존 고객 크로스셀 (콜드 획득 아님) |
+| 데이터 | 고객 프로필/상담 데이터 이미 보유 |
+| 접근법 | 기존 플랫폼 위 레이어 (Bloomreach와 동일 패턴) |
+
+### 종합
+
+- **시장**: 있고, 성장 중
+- **채널톡 승산**: 있음 (모수, 한국 시장, 크로스셀, 데이터)
+- **불확실한 것**: B2B 대비 시장 규모
+
+→ 시장 크기가 B2B만큼인지는 모르지만, 채널톡이 가진 자산으로 먹을 수 있는 기회는 있음
